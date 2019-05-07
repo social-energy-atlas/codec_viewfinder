@@ -47,7 +47,8 @@
         "drupal/advagg": "^3.5",
         "drupal/purge": "^3.0@beta",
         "drupal/amp": "^2.1",
-        "drush/drush": "^9.6"
+        "drush/drush": "^9.6",
+        "drupal/address": "^1.6"
     },
     "replace": {
         "drupal/core": "^8.7"
