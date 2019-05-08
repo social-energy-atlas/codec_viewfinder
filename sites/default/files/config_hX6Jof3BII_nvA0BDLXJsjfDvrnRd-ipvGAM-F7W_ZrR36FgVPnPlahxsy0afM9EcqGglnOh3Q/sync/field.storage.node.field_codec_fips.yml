@@ -1,0 +1,20 @@
+uuid: 842759ca-efc7-468e-94ab-6c455ce9087f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_codec_fips
+field_name: field_codec_fips
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

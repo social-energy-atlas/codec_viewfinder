@@ -1,0 +1,28 @@
+uuid: 539c29d0-e119-43c2-ad5a-4c7dd205026b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_interviewer
+    - node.type.codec_vf_informant
+    - node.type.mt_team_member
+id: node.codec_vf_informant.field_codec_interviewer
+field_name: field_codec_interviewer
+entity_type: node
+bundle: codec_vf_informant
+label: Interviewer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      mt_team_member: mt_team_member
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

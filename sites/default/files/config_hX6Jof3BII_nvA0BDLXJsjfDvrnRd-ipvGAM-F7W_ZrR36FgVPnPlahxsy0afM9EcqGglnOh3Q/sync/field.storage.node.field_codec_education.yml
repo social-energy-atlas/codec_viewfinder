@@ -1,0 +1,57 @@
+uuid: ed31f753-1b37-4bfe-bd25-7d00b50caf45
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_codec_education
+field_name: field_codec_education
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: n8
+      label: 'Nursery to 8th Grade'
+    -
+      value: 8-12
+      label: 'Some High School (No Diploma)'
+    -
+      value: hs
+      label: 'High School Graduate, Diploma, or Equivalent (e.g. GED)'
+    -
+      value: cc
+      label: 'Some College Credit (No Diploma)'
+    -
+      value: trade
+      label: 'Trade, Technical, or Vocational Training'
+    -
+      value: assoc
+      label: 'Associate''s Degree'
+    -
+      value: bach
+      label: 'Bachelor''s Degree'
+    -
+      value: mast
+      label: 'Master''s Degree'
+    -
+      value: pro
+      label: 'Professional Degree'
+    -
+      value: dr
+      label: Doctorate
+    -
+      value: none
+      label: 'No Schooling Completed'
+    -
+      value: pnd
+      label: 'Prefer Not to Disclose'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

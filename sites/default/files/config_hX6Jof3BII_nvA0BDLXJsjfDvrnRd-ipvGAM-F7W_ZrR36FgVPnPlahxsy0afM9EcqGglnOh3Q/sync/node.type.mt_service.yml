@@ -1,0 +1,30 @@
+uuid: f4131283-a7c2-4643-aedd-77252745cbc2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: Tools
+type: mt_service
+description: 'A Tools post is ideal for creating and displaying tools that have been designed by the Social Energy Atlas. It has the option to be displayed into the front page slide show. It provides the ability to attach an image which is automatically adjusted to fit into the website''s layout. What’s particularly cool about a Tools post, is that it provides the ability to attach a series of images, thumbnails of which are automatically created and adjusted to fit into the website layout. The Tools post enables free tagging (just like labels), taking the bests from the taxonomy system.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

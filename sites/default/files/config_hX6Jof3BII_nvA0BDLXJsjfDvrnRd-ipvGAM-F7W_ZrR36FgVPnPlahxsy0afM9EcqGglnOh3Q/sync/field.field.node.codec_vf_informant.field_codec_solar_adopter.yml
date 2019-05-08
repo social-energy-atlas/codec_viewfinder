@@ -1,0 +1,23 @@
+uuid: e2edc52f-1c11-4ec1-961a-a04e4f19a989
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_solar_adopter
+    - node.type.codec_vf_informant
+id: node.codec_vf_informant.field_codec_solar_adopter
+field_name: field_codec_solar_adopter
+entity_type: node
+bundle: codec_vf_informant
+label: 'Solar Adopter'
+description: 'Click this box if the informant reported as having already adopted solar technologies as part of their energy investments.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

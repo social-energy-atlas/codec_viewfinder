@@ -1,0 +1,23 @@
+uuid: d8be76fe-017c-4885-ac17-8644dd38226c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_bg_video_volume
+    - node.type.mt_slideshow_entry
+id: node.mt_slideshow_entry.field_mt_bg_video_volume
+field_name: field_mt_bg_video_volume
+entity_type: node
+bundle: mt_slideshow_entry
+label: 'Background Video Volume'
+description: 'Set the Volume of the Background Video from 0 to 100 (e.g. 50).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,21 @@
+uuid: 9216cc14-6f37-4767-8ca9-86900be06387
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_employment
+    - node.type.codec_vf_informant
+  module:
+    - options
+id: node.codec_vf_informant.field_codec_employment
+field_name: field_codec_employment
+entity_type: node
+bundle: codec_vf_informant
+label: 'Employment Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

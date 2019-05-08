@@ -1,0 +1,38 @@
+uuid: 07e35a0a-48ba-4004-ae30-afa8c0f5c155
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_team_member.body
+    - node.type.mt_team_member
+  module:
+    - text
+    - user
+id: node.mt_team_member.teaser
+targetEntityType: node
+bundle: mt_team_member
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_codec_why: true
+  field_mt_banner_image: true
+  field_mt_facebook_account: true
+  field_mt_linkedin_account: true
+  field_mt_member_photo: true
+  field_mt_subtitle: true
+  field_mt_twitter_account: true

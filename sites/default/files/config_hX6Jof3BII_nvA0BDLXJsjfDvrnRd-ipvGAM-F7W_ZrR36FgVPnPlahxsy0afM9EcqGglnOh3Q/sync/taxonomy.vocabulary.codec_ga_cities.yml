@@ -1,0 +1,8 @@
+uuid: f9949dcb-d4f7-4969-8dfc-5e79d7973935
+langcode: en
+status: true
+dependencies: {  }
+name: 'Georgia Cities and Municipalities'
+vid: codec_ga_cities
+description: ''
+weight: 0

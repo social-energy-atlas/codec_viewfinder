@@ -1,0 +1,18 @@
+uuid: 608627c8-6318-4f99-9dc1-81e0829b4c53
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.codec_solar_installation
+id: node.codec_solar_installation.title
+field_name: title
+entity_type: node
+bundle: codec_solar_installation
+label: 'Record Number'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

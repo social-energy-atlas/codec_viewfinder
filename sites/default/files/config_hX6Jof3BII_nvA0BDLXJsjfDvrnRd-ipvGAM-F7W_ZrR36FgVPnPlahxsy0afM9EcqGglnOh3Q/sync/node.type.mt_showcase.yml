@@ -1,0 +1,30 @@
+uuid: ce0526c9-c15a-4f6c-958f-b6947bb51e8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: Research
+type: mt_showcase
+description: 'A Research post is ideal for creating and displaying the various articles, presentations, etc. that we have produced from the Social Energy Atlas. It has the option to be displayed into front page slide show. It provides the ability to attach an image which is automatically adjusted to fit into the websites layout. What’s particularly cool about a Research post, is that it provides the ability to attach a series of images, thumbnails of which are automatically created and adjusted to fit into the website layout. Research post enables free tagging (just like labels), taking the bests from the taxonomy system.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

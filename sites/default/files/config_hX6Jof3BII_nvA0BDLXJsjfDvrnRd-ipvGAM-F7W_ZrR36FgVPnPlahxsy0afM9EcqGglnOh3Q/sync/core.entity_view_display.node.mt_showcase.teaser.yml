@@ -1,0 +1,40 @@
+uuid: d4c38108-0fca-46bd-ba56-199748922036
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_showcase.body
+    - node.type.mt_showcase
+  module:
+    - text
+    - user
+id: node.mt_showcase.teaser
+targetEntityType: node
+bundle: mt_showcase
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_image: true
+  field_mt_banner_image: true
+  field_mt_content_collapses: true
+  field_mt_showcase_tags: true
+  field_mt_slideshow: true
+  field_mt_slideshow_image: true
+  field_mt_slideshow_text: true
+  field_mt_subheader_body: true
+  field_mt_subtitle: true

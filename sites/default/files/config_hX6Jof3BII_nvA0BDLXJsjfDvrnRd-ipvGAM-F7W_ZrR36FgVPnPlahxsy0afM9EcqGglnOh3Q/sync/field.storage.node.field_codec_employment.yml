@@ -1,0 +1,48 @@
+uuid: 2d6b2bbb-da7e-4776-bbb0-4d438d471724
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_codec_employment
+field_name: field_codec_employment
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: wage
+      label: 'Employed for wages'
+    -
+      value: self
+      label: Self-employed
+    -
+      value: looking
+      label: 'Out of work and looking for work'
+    -
+      value: not-looking
+      label: 'Out of work but not currently looking for work'
+    -
+      value: home
+      label: 'A homemaker'
+    -
+      value: student
+      label: 'A student'
+    -
+      value: military
+      label: Military
+    -
+      value: retired
+      label: Retired
+    -
+      value: unable
+      label: 'Unable to work'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

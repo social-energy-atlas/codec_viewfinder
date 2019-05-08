@@ -1,0 +1,31 @@
+uuid: 4783ce5b-218b-4369-a5bd-aeb81528504b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.codec_ga_cities.field_codec_ga_county
+    - taxonomy.vocabulary.codec_ga_cities
+  module:
+    - text
+id: taxonomy_term.codec_ga_cities.default
+targetEntityType: taxonomy_term
+bundle: codec_ga_cities
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_codec_ga_county:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  feeds_item: true

@@ -1,0 +1,19 @@
+uuid: 6605d523-d096-419b-ac17-7c01bcff3760
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_codec_sampling_plan
+field_name: field_codec_sampling_plan
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

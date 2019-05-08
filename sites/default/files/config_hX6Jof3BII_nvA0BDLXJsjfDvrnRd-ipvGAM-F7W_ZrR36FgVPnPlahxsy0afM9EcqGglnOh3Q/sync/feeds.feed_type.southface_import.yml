@@ -1,0 +1,217 @@
+uuid: d8194f2d-046a-49a7-bed8-59d0e7bc0ba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.codec_solar_installation.title
+    - field.field.node.codec_solar_installation.field_codec_annual_prod
+    - field.field.node.codec_solar_installation.field_codec_city_muni
+    - field.field.node.codec_solar_installation.field_codec_county_test
+    - field.field.node.codec_solar_installation.field_codec_electric_utility
+    - field.field.node.codec_solar_installation.field_codec_install_date
+    - field.field.node.codec_solar_installation.field_codec_installer
+    - field.field.node.codec_solar_installation.field_codec_location
+    - field.field.node.codec_solar_installation.field_codec_manufacturer
+    - field.field.node.codec_solar_installation.field_codec_sector
+    - field.field.node.codec_solar_installation.field_codec_system_capacity
+    - field.field.node.codec_solar_installation.field_codec_system_type
+    - field.field.node.codec_solar_installation.field_codec_zipcode
+    - node.type.codec_solar_installation
+  module:
+    - geofield
+    - node
+label: 'Southface Solar Installation Import'
+id: southface_import
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: codec_solar_installation
+custom_sources:
+  record_number:
+    label: 'Record Number'
+    value: 'Record Number'
+    machine_name: record_number
+  county:
+    label: County
+    value: County
+    machine_name: county
+  latitude:
+    label: Latitude
+    value: Latitude
+    machine_name: latitude
+  longitude:
+    label: Longitude
+    value: Longitude
+    machine_name: longitude
+  city:
+    label: City
+    value: City
+    machine_name: city
+  zipcode:
+    label: Zipcode
+    value: Zipcode
+    machine_name: zipcode
+  '':
+    label: 'System Type'
+    value: 'System Type'
+    machine_name: ''
+  system_type:
+    label: 'System Type'
+    value: 'System Type'
+    machine_name: system_type
+  sector:
+    label: Sector
+    value: Sector
+    machine_name: sector
+  system_installer:
+    label: 'System Installer'
+    value: 'System Installer'
+    machine_name: system_installer
+  system_manufacturer:
+    label: 'System Manufacturer'
+    value: 'System Manufacturer'
+    machine_name: system_manufacturer
+  installation_date:
+    label: 'Installation Date'
+    value: 'Installation Date'
+    machine_name: installation_date
+  installation_completion_date:
+    label: 'Installation Completion Date'
+    value: 'Installation Completion Date'
+    machine_name: installation_completion_date
+  system_capacity_kw_:
+    label: 'System Capacity (kW)'
+    value: 'System Capacity (kW)'
+    machine_name: system_capacity_kw_
+  annual_production_kwh_:
+    label: 'Annual Production (kWh)'
+    value: 'Annual Production (kWh)'
+    machine_name: annual_production_kwh_
+  electric_utility_territory:
+    label: 'Electric Utility Territory'
+    value: 'Electric Utility Territory'
+    machine_name: electric_utility_territory
+  county_tax:
+    label: County
+    value: County
+    machine_name: county_tax
+  county_test_tax:
+    label: County
+    value: County
+    machine_name: county_test_tax
+  county_test_import:
+    label: County
+    value: County
+    machine_name: county_test_import
+  city_id:
+    label: City
+    value: City
+    machine_name: city_id
+  county_id:
+    label: County
+    value: County
+    machine_name: county_id
+mappings:
+  -
+    target: title
+    map:
+      value: record_number
+    unique:
+      value: '1'
+  -
+    target: field_codec_location
+    map:
+      lat: latitude
+      lon: longitude
+  -
+    target: field_codec_zipcode
+    map:
+      value: zipcode
+  -
+    target: field_codec_system_type
+    map:
+      target_id: system_type
+    settings:
+      reference_by: name
+      autocreate: '1'
+      feeds_item: false
+  -
+    target: field_codec_sector
+    map:
+      target_id: sector
+    settings:
+      reference_by: name
+      autocreate: '1'
+      feeds_item: false
+  -
+    target: field_codec_installer
+    map:
+      target_id: system_installer
+    settings:
+      reference_by: name
+      autocreate: '1'
+      feeds_item: false
+  -
+    target: field_codec_manufacturer
+    map:
+      target_id: system_manufacturer
+    settings:
+      reference_by: name
+      autocreate: '1'
+      feeds_item: false
+  -
+    target: field_codec_install_date
+    map:
+      value: installation_completion_date
+    settings:
+      timezone: America/New_York
+  -
+    target: field_codec_system_capacity
+    map:
+      value: system_capacity_kw_
+  -
+    target: field_codec_annual_prod
+    map:
+      value: annual_production_kwh_
+  -
+    target: field_codec_electric_utility
+    map:
+      target_id: electric_utility_territory
+    settings:
+      reference_by: name
+      autocreate: '1'
+      feeds_item: false
+  -
+    target: field_codec_city_muni
+    map:
+      target_id: city_id
+    settings:
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'
+  -
+    target: field_codec_county_test
+    map:
+      target_id: county_id
+    settings:
+      reference_by: name
+      feeds_item: guid
+      autocreate: '1'

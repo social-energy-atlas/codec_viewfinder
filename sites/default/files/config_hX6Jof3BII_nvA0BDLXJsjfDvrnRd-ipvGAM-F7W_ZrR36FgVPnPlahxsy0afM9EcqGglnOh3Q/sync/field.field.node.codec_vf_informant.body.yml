@@ -1,0 +1,22 @@
+uuid: 7b16000a-5fd9-42f4-99fc-a31e4648cc98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.codec_vf_informant
+  module:
+    - text
+id: node.codec_vf_informant.body
+field_name: body
+entity_type: node
+bundle: codec_vf_informant
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

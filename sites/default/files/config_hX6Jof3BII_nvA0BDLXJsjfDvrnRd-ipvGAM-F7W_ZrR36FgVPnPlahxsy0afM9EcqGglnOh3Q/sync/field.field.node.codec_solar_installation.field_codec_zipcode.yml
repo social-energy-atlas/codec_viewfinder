@@ -1,0 +1,23 @@
+uuid: 71e03ef2-70e3-4cb8-bba7-7384cd7d5d69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_zipcode
+    - node.type.codec_solar_installation
+id: node.codec_solar_installation.field_codec_zipcode
+field_name: field_codec_zipcode
+entity_type: node
+bundle: codec_solar_installation
+label: Zipcode
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

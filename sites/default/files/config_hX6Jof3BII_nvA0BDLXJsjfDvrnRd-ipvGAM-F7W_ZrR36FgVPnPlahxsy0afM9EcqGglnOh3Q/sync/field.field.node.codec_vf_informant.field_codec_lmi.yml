@@ -1,0 +1,23 @@
+uuid: bdd39dba-79e9-44ab-b4f2-60e8ddb3b28f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_lmi
+    - node.type.codec_vf_informant
+id: node.codec_vf_informant.field_codec_lmi
+field_name: field_codec_lmi
+entity_type: node
+bundle: codec_vf_informant
+label: 'Low or Moderate Income'
+description: 'Check this box if the informant reported as having an income at or below 120% of AGI for their county.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

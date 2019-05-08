@@ -1,0 +1,22 @@
+uuid: 1c2d48f7-394f-4760-aa4c-926ecd1e4331
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - enterpriseplus
+_core:
+  default_config_hash: CRf6BRvBJ842ep8p9PmgBnX_N5tlssmByg62qZkjwec
+id: enterpriseplus_search
+theme: enterpriseplus
+region: footer_first
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

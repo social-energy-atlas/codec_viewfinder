@@ -1,0 +1,23 @@
+uuid: 3ece9b1a-adbf-4c3a-b337-36c4965efd56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_hl
+    - node.type.codec_county
+id: node.codec_county.field_codec_pop_hl
+field_name: field_codec_pop_hl
+entity_type: node
+bundle: codec_county
+label: 'Hispanic or Latino'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

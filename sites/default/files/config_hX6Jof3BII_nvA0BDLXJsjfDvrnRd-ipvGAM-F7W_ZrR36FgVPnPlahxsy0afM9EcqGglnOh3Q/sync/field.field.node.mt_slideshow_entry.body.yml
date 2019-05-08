@@ -1,0 +1,22 @@
+uuid: 76db8b57-ca87-4c85-a7a8-039ec977ccdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.mt_slideshow_entry
+  module:
+    - text
+id: node.mt_slideshow_entry.body
+field_name: body
+entity_type: node
+bundle: mt_slideshow_entry
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

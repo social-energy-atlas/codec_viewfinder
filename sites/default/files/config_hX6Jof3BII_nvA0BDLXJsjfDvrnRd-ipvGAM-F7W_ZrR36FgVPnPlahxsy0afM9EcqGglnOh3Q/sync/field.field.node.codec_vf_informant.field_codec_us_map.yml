@@ -1,0 +1,27 @@
+uuid: 9ce70840-12ba-41b8-ab09-11eec2bc47fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_us_map
+    - node.type.codec_vf_informant
+  module:
+    - file
+id: node.codec_vf_informant.field_codec_us_map
+field_name: field_codec_us_map
+entity_type: node
+bundle: codec_vf_informant
+label: 'United States Map'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf png'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

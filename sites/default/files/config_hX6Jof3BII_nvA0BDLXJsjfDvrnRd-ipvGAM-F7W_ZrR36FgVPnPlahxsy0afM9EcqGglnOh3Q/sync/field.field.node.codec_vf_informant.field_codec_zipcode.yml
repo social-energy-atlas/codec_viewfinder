@@ -1,0 +1,23 @@
+uuid: 9e22db9d-9336-4768-a9ee-d2a69766048f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_zipcode
+    - node.type.codec_vf_informant
+id: node.codec_vf_informant.field_codec_zipcode
+field_name: field_codec_zipcode
+entity_type: node
+bundle: codec_vf_informant
+label: Zipcode
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

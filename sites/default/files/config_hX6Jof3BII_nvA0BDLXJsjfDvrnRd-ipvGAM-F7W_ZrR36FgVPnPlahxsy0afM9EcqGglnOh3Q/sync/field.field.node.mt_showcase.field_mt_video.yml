@@ -1,0 +1,25 @@
+uuid: a40c6e67-2396-41fe-9dfc-86157dafc06f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_video
+    - node.type.mt_showcase
+  module:
+    - video_embed_field
+id: node.mt_showcase.field_mt_video
+field_name: field_mt_video
+entity_type: node
+bundle: mt_showcase
+label: 'Video URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

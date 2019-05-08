@@ -1,0 +1,39 @@
+uuid: 2fa0aa31-cfa0-45f5-af59-ff3380343d2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_codec_ethnicity
+field_name: field_codec_ethnicity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: api
+      label: 'Asian or Pacific Islander'
+    -
+      value: baa
+      label: 'Black or African American'
+    -
+      value: hl
+      label: 'Hispanic or Latino'
+    -
+      value: nai
+      label: 'Native American or American Indian'
+    -
+      value: w
+      label: White
+    -
+      value: o
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

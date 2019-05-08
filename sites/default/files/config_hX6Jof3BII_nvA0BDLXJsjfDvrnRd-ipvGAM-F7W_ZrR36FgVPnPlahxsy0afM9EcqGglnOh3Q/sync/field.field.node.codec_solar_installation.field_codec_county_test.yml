@@ -1,0 +1,29 @@
+uuid: c35a04e0-40ac-4d44-b5e9-c1ea769a224c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_county_test
+    - node.type.codec_solar_installation
+    - taxonomy.vocabulary.codec_georgia_counties
+id: node.codec_solar_installation.field_codec_county_test
+field_name: field_codec_county_test
+entity_type: node
+bundle: codec_solar_installation
+label: County
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_georgia_counties: codec_georgia_counties
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

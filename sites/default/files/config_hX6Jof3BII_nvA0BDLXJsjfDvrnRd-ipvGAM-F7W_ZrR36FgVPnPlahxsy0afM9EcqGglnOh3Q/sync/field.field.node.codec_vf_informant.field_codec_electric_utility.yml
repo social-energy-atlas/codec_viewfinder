@@ -1,0 +1,29 @@
+uuid: ad2d9a17-6bc7-416f-91c8-7c2199ee6c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_electric_utility
+    - node.type.codec_vf_informant
+    - taxonomy.vocabulary.codec_utilities
+id: node.codec_vf_informant.field_codec_electric_utility
+field_name: field_codec_electric_utility
+entity_type: node
+bundle: codec_vf_informant
+label: 'Electric Utility'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_utilities: codec_utilities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

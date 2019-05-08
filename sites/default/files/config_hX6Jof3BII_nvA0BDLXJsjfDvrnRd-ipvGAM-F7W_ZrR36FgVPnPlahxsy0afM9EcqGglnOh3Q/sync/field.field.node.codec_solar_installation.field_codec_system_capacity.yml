@@ -1,0 +1,23 @@
+uuid: a0a7b66a-01ac-4fdf-9091-56ac8b7f81d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_system_capacity
+    - node.type.codec_solar_installation
+id: node.codec_solar_installation.field_codec_system_capacity
+field_name: field_codec_system_capacity
+entity_type: node
+bundle: codec_solar_installation
+label: 'System Capacity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: kW
+field_type: decimal

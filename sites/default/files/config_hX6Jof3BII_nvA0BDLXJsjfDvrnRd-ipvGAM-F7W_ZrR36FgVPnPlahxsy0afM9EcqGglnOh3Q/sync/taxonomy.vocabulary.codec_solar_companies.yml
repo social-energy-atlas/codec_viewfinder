@@ -1,0 +1,8 @@
+uuid: 10c79719-37ad-4960-83d5-9daf642d199a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Solar Companies'
+vid: codec_solar_companies
+description: ''
+weight: 0

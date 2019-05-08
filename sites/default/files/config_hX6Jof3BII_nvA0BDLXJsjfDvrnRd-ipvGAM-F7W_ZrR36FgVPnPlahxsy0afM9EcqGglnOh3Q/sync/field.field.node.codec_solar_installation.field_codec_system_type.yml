@@ -1,0 +1,29 @@
+uuid: 0dda6cbd-8ac0-4f4f-b831-c9ac87deb4be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_system_type
+    - node.type.codec_solar_installation
+    - taxonomy.vocabulary.codec_pv_system_types
+id: node.codec_solar_installation.field_codec_system_type
+field_name: field_codec_system_type
+entity_type: node
+bundle: codec_solar_installation
+label: 'System Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_pv_system_types: codec_pv_system_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

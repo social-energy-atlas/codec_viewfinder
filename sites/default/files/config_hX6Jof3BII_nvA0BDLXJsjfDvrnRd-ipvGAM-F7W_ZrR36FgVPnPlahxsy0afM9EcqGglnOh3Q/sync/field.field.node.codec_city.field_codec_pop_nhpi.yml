@@ -1,0 +1,23 @@
+uuid: 352689b7-2a5f-42d6-914e-0fbc1ba8989e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_nhpi
+    - node.type.codec_city
+id: node.codec_city.field_codec_pop_nhpi
+field_name: field_codec_pop_nhpi
+entity_type: node
+bundle: codec_city
+label: 'Native Hawaiian or Pacific Islander'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

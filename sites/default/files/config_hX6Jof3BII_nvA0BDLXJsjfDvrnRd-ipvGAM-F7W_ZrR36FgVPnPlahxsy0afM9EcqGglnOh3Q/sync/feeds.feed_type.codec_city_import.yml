@@ -1,0 +1,34 @@
+uuid: c244b31e-84e4-44da-9614-0d49cb1271fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.codec_city
+  module:
+    - node
+label: 'City Demographic Data Import'
+id: codec_city_import
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: codec_city
+custom_sources: {  }
+mappings: {  }

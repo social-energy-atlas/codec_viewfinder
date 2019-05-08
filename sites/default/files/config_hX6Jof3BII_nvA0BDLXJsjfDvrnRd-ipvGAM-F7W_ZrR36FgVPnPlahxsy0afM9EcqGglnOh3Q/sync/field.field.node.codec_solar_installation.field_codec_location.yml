@@ -1,0 +1,22 @@
+uuid: 77043b8b-9dda-4dbf-bedb-127d9c82123a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_location
+    - node.type.codec_solar_installation
+  module:
+    - geofield
+id: node.codec_solar_installation.field_codec_location
+field_name: field_codec_location
+entity_type: node
+bundle: codec_solar_installation
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

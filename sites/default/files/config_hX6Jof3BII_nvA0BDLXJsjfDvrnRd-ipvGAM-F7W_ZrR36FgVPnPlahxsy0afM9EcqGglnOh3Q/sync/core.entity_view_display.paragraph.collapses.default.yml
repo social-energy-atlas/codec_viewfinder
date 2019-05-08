@@ -1,0 +1,31 @@
+uuid: b0c5b877-b4d1-4dce-8ae9-3a22cee0c02a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.collapses.field_mt_collapse_body
+    - field.field.paragraph.collapses.field_mt_collapse_title
+    - paragraphs.paragraphs_type.collapses
+  module:
+    - text
+id: paragraph.collapses.default
+targetEntityType: paragraph
+bundle: collapses
+mode: default
+content:
+  field_mt_collapse_body:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_mt_collapse_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

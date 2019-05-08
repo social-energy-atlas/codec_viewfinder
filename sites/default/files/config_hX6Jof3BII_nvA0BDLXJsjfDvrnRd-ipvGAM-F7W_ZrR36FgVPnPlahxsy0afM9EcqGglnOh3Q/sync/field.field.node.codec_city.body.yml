@@ -1,0 +1,22 @@
+uuid: cdbf7daa-2d0d-4fde-8970-5159c7bf6fc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.codec_city
+  module:
+    - text
+id: node.codec_city.body
+field_name: body
+entity_type: node
+bundle: codec_city
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

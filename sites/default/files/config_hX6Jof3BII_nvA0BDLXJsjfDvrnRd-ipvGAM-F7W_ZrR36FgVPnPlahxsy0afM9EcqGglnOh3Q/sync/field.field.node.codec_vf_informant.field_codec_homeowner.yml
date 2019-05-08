@@ -1,0 +1,23 @@
+uuid: ceddab35-e1f4-4cc7-8df8-a4aad2337b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_homeowner
+    - node.type.codec_vf_informant
+id: node.codec_vf_informant.field_codec_homeowner
+field_name: field_codec_homeowner
+entity_type: node
+bundle: codec_vf_informant
+label: Homeowner
+description: 'Click this box if the informant reported being a homeowner.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

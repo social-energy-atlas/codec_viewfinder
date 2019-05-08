@@ -1,0 +1,29 @@
+uuid: 122ab7cd-923a-430b-bd56-879d3b76c7b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_city_muni
+    - node.type.codec_solar_installation
+    - taxonomy.vocabulary.codec_ga_cities
+id: node.codec_solar_installation.field_codec_city_muni
+field_name: field_codec_city_muni
+entity_type: node
+bundle: codec_solar_installation
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_ga_cities: codec_ga_cities
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

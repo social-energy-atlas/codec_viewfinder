@@ -1,0 +1,49 @@
+uuid: a62772df-0043-4b6b-96fd-0b2a931fa10e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.codec_vf_informant.body
+    - node.type.codec_vf_informant
+  module:
+    - text
+    - user
+id: node.codec_vf_informant.teaser
+targetEntityType: node
+bundle: codec_vf_informant
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  feeds_item: true
+  field_codec_birth_year: true
+  field_codec_city: true
+  field_codec_county: true
+  field_codec_education: true
+  field_codec_electric_utility: true
+  field_codec_employment: true
+  field_codec_ethnicity: true
+  field_codec_ga_map: true
+  field_codec_gender: true
+  field_codec_homeowner: true
+  field_codec_household: true
+  field_codec_interviewer: true
+  field_codec_lmi: true
+  field_codec_religion: true
+  field_codec_solar_adopter: true
+  field_codec_us_map: true
+  field_codec_zipcode: true

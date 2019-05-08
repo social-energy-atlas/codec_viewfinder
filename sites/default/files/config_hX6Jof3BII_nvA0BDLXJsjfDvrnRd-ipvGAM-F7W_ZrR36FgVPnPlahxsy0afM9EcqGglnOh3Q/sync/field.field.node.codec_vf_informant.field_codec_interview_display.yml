@@ -1,0 +1,25 @@
+uuid: d3591b15-a8b2-41a1-9c52-57da29f99156
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_interview_display
+    - node.type.codec_vf_informant
+  module:
+    - video_embed_field
+id: node.codec_vf_informant.field_codec_interview_display
+field_name: field_codec_interview_display
+entity_type: node
+bundle: codec_vf_informant
+label: 'Interview Display'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: youtube_playlist
+field_type: video_embed_field

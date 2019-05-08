@@ -1,0 +1,87 @@
+uuid: c0cec395-25f7-411b-ac9a-f8fd98102e0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_codec_religion
+field_name: field_codec_religion
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: adv
+      label: Adventist
+    -
+      value: ag
+      label: Agnostic
+    -
+      value: ath
+      label: Atheist
+    -
+      value: bap
+      label: Baptist
+    -
+      value: bud
+      label: Budhist
+    -
+      value: cat
+      label: Catholic
+    -
+      value: cnon
+      label: 'Christian (Non-denominational)'
+    -
+      value: cs
+      label: 'Christian Science'
+    -
+      value: con
+      label: Congregationalist
+    -
+      value: ep
+      label: Episcopalian/Anglican
+    -
+      value: hin
+      label: Hindu
+    -
+      value: jeh
+      label: 'Jehovah''s Witness'
+    -
+      value: jew
+      label: Jewish
+    -
+      value: lut
+      label: Lutheran
+    -
+      value: met
+      label: Methodist
+    -
+      value: mor
+      label: Morman
+    -
+      value: orc
+      label: 'Orthodox Christian'
+    -
+      value: pen
+      label: Pentacostal
+    -
+      value: pre
+      label: Presbyterian
+    -
+      value: res
+      label: Restorationist
+    -
+      value: mus
+      label: Muslim
+    -
+      value: pnd
+      label: 'Prefer Not to Disclose'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

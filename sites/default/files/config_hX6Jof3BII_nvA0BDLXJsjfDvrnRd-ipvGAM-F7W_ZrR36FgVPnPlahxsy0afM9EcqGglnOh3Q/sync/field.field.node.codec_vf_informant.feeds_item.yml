@@ -1,0 +1,23 @@
+uuid: 8590cb32-fb96-4088-8fe4-59683aed7889
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.codec_vf_informant
+  module:
+    - feeds
+id: node.codec_vf_informant.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: codec_vf_informant
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

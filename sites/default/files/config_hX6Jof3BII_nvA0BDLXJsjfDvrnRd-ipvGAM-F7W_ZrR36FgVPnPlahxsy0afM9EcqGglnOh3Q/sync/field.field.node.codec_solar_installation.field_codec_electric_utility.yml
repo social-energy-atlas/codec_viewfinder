@@ -1,0 +1,29 @@
+uuid: ee0500fe-f48d-4c1c-8162-6eda0d60166b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_electric_utility
+    - node.type.codec_solar_installation
+    - taxonomy.vocabulary.codec_utilities
+id: node.codec_solar_installation.field_codec_electric_utility
+field_name: field_codec_electric_utility
+entity_type: node
+bundle: codec_solar_installation
+label: 'Electric Utility'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_utilities: codec_utilities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

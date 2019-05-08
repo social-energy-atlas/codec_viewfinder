@@ -1,0 +1,21 @@
+uuid: e264b321-3e08-41d6-afba-076fa4206944
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_why
+    - node.type.mt_team_member
+  module:
+    - text
+id: node.mt_team_member.field_codec_why
+field_name: field_codec_why
+entity_type: node
+bundle: mt_team_member
+label: 'Why did this person join the CODEC team?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

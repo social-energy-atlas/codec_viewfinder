@@ -1,0 +1,21 @@
+uuid: 52a7b70f-d56e-4750-ad72-52c84dd583d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_education
+    - node.type.codec_vf_informant
+  module:
+    - options
+id: node.codec_vf_informant.field_codec_education
+field_name: field_codec_education
+entity_type: node
+bundle: codec_vf_informant
+label: Education
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

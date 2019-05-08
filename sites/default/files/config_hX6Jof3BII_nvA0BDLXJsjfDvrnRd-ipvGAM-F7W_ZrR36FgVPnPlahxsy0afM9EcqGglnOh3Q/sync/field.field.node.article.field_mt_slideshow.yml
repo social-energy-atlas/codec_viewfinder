@@ -1,0 +1,23 @@
+uuid: 2c1052f0-00bb-4483-b23c-5fae2b8d7c14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mt_slideshow
+    - node.type.article
+id: node.article.field_mt_slideshow
+field_name: field_mt_slideshow
+entity_type: node
+bundle: article
+label: 'Promote to slideshow'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

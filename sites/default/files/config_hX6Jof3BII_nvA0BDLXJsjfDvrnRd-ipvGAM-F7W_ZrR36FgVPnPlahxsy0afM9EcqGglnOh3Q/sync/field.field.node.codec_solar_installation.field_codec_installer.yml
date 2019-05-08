@@ -1,0 +1,29 @@
+uuid: 560ca6a6-a675-4191-ab3b-6de2feb460ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_installer
+    - node.type.codec_solar_installation
+    - taxonomy.vocabulary.codec_solar_companies
+id: node.codec_solar_installation.field_codec_installer
+field_name: field_codec_installer
+entity_type: node
+bundle: codec_solar_installation
+label: 'Installation Company'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_solar_companies: codec_solar_companies
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: e8c71e58-f0b1-434d-bbfc-bdcc2f7f83ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_codec_pop_male
+field_name: field_codec_pop_male
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

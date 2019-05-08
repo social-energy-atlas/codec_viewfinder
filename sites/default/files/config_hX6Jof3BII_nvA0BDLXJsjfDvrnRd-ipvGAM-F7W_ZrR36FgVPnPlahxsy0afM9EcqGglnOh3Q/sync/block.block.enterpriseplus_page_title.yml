@@ -1,0 +1,20 @@
+uuid: 0d3743cc-68a7-4142-a1f6-871db8fcdc22
+langcode: en
+status: true
+dependencies:
+  theme:
+    - enterpriseplus
+_core:
+  default_config_hash: Gts7QwAvc7zDQdLMqnI1gjeGtye_D2Y8bGcQNb2on1I
+id: enterpriseplus_page_title
+theme: enterpriseplus
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

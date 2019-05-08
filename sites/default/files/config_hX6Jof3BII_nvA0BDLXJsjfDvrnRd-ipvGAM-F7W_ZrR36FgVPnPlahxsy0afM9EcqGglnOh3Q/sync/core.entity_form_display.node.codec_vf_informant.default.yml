@@ -1,0 +1,242 @@
+uuid: 4de68d1d-c075-4a4a-8f26-2f7abb7330dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.codec_vf_informant.body
+    - field.field.node.codec_vf_informant.field_codec_birth_year
+    - field.field.node.codec_vf_informant.field_codec_city
+    - field.field.node.codec_vf_informant.field_codec_county
+    - field.field.node.codec_vf_informant.field_codec_education
+    - field.field.node.codec_vf_informant.field_codec_electric_utility
+    - field.field.node.codec_vf_informant.field_codec_employment
+    - field.field.node.codec_vf_informant.field_codec_ethnicity
+    - field.field.node.codec_vf_informant.field_codec_ga_map
+    - field.field.node.codec_vf_informant.field_codec_gender
+    - field.field.node.codec_vf_informant.field_codec_homeowner
+    - field.field.node.codec_vf_informant.field_codec_household
+    - field.field.node.codec_vf_informant.field_codec_interview_display
+    - field.field.node.codec_vf_informant.field_codec_interviewer
+    - field.field.node.codec_vf_informant.field_codec_lmi
+    - field.field.node.codec_vf_informant.field_codec_religion
+    - field.field.node.codec_vf_informant.field_codec_solar_adopter
+    - field.field.node.codec_vf_informant.field_codec_us_map
+    - field.field.node.codec_vf_informant.field_codec_zipcode
+    - node.type.codec_vf_informant
+  module:
+    - file
+    - path
+    - scheduler
+    - text
+    - video_embed_field
+id: node.codec_vf_informant.default
+targetEntityType: node
+bundle: codec_vf_informant
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_codec_birth_year:
+    weight: 138
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_city:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_codec_county:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_codec_education:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_codec_electric_utility:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_codec_employment:
+    weight: 126
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_codec_ethnicity:
+    weight: 127
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_codec_ga_map:
+    weight: 130
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_codec_gender:
+    weight: 129
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_codec_homeowner:
+    weight: 131
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_codec_household:
+    weight: 132
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_interview_display:
+    weight: 133
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+  field_codec_interviewer:
+    weight: 128
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_codec_lmi:
+    weight: 134
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_codec_religion:
+    weight: 135
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_codec_solar_adopter:
+    weight: 136
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_codec_us_map:
+    weight: 137
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_codec_zipcode:
+    weight: 139
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true

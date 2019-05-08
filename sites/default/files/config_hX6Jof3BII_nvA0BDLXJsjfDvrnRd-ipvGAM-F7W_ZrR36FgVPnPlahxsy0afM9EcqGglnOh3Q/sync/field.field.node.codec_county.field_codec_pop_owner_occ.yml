@@ -1,0 +1,23 @@
+uuid: 4bc87eeb-c6b7-437e-9d4b-d167caa76c4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_owner_occ
+    - node.type.codec_county
+id: node.codec_county.field_codec_pop_owner_occ
+field_name: field_codec_pop_owner_occ
+entity_type: node
+bundle: codec_county
+label: 'Owner Occupancy Rate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,45 @@
+uuid: b0c91ee2-1e43-4045-b7bb-be8ea167ed38
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.codec_solar_installation.body
+    - node.type.codec_solar_installation
+  module:
+    - text
+    - user
+id: node.codec_solar_installation.teaser
+targetEntityType: node
+bundle: codec_solar_installation
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  feeds_item: true
+  field_address: true
+  field_codec_annual_prod: true
+  field_codec_city_muni: true
+  field_codec_county_test: true
+  field_codec_electric_utility: true
+  field_codec_install_date: true
+  field_codec_installer: true
+  field_codec_location: true
+  field_codec_manufacturer: true
+  field_codec_sector: true
+  field_codec_system_capacity: true
+  field_codec_system_type: true
+  field_codec_zipcode: true

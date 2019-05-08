@@ -1,0 +1,9 @@
+uuid: 6622a6e1-764d-4c2e-9306-e357d4c9856a
+langcode: en
+status: true
+dependencies: {  }
+id: collapses
+label: Collapses
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

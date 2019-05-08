@@ -1,0 +1,29 @@
+uuid: adb6841e-be4d-4aaa-861c-716ec7842b59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_ga_county
+    - taxonomy.vocabulary.codec_ga_cities
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_ga_cities.field_codec_ga_county
+field_name: field_codec_ga_county
+entity_type: taxonomy_term
+bundle: codec_ga_cities
+label: County
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_georgia_counties: codec_georgia_counties
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

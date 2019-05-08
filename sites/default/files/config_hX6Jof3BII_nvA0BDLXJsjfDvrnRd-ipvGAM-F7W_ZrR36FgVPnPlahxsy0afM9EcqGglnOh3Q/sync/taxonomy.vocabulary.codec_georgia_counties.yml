@@ -1,0 +1,8 @@
+uuid: e01d855d-b101-4832-9722-75391e8f7e50
+langcode: en
+status: true
+dependencies: {  }
+name: 'Georgia Counties'
+vid: codec_georgia_counties
+description: ''
+weight: 0

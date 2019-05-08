@@ -1,0 +1,21 @@
+uuid: a6068f11-50fb-49bf-9b78-fa42b96d113b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_install_date
+    - node.type.codec_solar_installation
+  module:
+    - datetime
+id: node.codec_solar_installation.field_codec_install_date
+field_name: field_codec_install_date
+entity_type: node
+bundle: codec_solar_installation
+label: 'Installation Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

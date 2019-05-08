@@ -1,0 +1,37 @@
+uuid: 5798f888-16b9-4237-bb7f-a6bda3e3982b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_service.body
+    - node.type.mt_service
+  module:
+    - text
+    - user
+id: node.mt_service.teaser
+targetEntityType: node
+bundle: mt_service
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_image: true
+  field_mt_banner_image: true
+  field_mt_slideshow: true
+  field_mt_slideshow_image: true
+  field_mt_slideshow_text: true
+  field_mt_subheader_body: true

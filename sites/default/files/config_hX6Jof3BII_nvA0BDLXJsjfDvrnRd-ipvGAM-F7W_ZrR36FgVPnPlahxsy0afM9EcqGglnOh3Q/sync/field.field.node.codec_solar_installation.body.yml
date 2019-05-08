@@ -1,0 +1,22 @@
+uuid: 9cf87413-1530-4491-bc39-f670b51d017d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.codec_solar_installation
+  module:
+    - text
+id: node.codec_solar_installation.body
+field_name: body
+entity_type: node
+bundle: codec_solar_installation
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,23 @@
+uuid: c308461e-5b29-44cf-8dd2-531bbf82f9fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_median_income
+    - node.type.codec_city
+id: node.codec_city.field_codec_pop_median_income
+field_name: field_codec_pop_median_income
+entity_type: node
+bundle: codec_city
+label: 'Median Income'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

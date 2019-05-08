@@ -1,0 +1,27 @@
+uuid: 768c28f8-53d9-4b1d-9e15-f6c5e0adff34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_ga_map
+    - node.type.codec_vf_informant
+  module:
+    - file
+id: node.codec_vf_informant.field_codec_ga_map
+field_name: field_codec_ga_map
+entity_type: node
+bundle: codec_vf_informant
+label: 'Georgia Map'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf png'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

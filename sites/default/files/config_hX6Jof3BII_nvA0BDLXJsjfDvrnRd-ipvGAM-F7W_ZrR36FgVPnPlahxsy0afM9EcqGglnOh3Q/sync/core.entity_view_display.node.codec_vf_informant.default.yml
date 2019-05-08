@@ -1,0 +1,202 @@
+uuid: 0ca7b7d1-5054-40b7-929e-09acfa70ecc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.codec_vf_informant.body
+    - field.field.node.codec_vf_informant.field_codec_birth_year
+    - field.field.node.codec_vf_informant.field_codec_city
+    - field.field.node.codec_vf_informant.field_codec_county
+    - field.field.node.codec_vf_informant.field_codec_education
+    - field.field.node.codec_vf_informant.field_codec_electric_utility
+    - field.field.node.codec_vf_informant.field_codec_employment
+    - field.field.node.codec_vf_informant.field_codec_ethnicity
+    - field.field.node.codec_vf_informant.field_codec_ga_map
+    - field.field.node.codec_vf_informant.field_codec_gender
+    - field.field.node.codec_vf_informant.field_codec_homeowner
+    - field.field.node.codec_vf_informant.field_codec_household
+    - field.field.node.codec_vf_informant.field_codec_interview_display
+    - field.field.node.codec_vf_informant.field_codec_interviewer
+    - field.field.node.codec_vf_informant.field_codec_lmi
+    - field.field.node.codec_vf_informant.field_codec_religion
+    - field.field.node.codec_vf_informant.field_codec_solar_adopter
+    - field.field.node.codec_vf_informant.field_codec_us_map
+    - field.field.node.codec_vf_informant.field_codec_zipcode
+    - node.type.codec_vf_informant
+  module:
+    - file
+    - options
+    - text
+    - user
+    - video_embed_field
+id: node.codec_vf_informant.default
+targetEntityType: node
+bundle: codec_vf_informant
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_codec_birth_year:
+    weight: 118
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_city:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codec_county:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codec_education:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_codec_electric_utility:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codec_employment:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_codec_ethnicity:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_codec_ga_map:
+    weight: 110
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_codec_gender:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_codec_homeowner:
+    weight: 111
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_codec_household:
+    weight: 112
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_interview_display:
+    weight: 113
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  field_codec_interviewer:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codec_lmi:
+    weight: 114
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_codec_religion:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_codec_solar_adopter:
+    weight: 116
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_codec_us_map:
+    weight: 117
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_codec_zipcode:
+    weight: 119
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  feeds_item: true

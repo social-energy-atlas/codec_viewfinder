@@ -1,0 +1,44 @@
+uuid: 3efa0cb5-fa14-484f-8272-a2d521948e07
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.codec_georgia_counties
+  module:
+    - taxonomy
+label: 'County Import'
+id: county_import
+description: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  skip_hash_check: false
+  values:
+    vid: codec_georgia_counties
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
+custom_sources:
+  county:
+    label: County
+    value: County
+    machine_name: county
+mappings:
+  -
+    target: name
+    map:
+      value: county
+    unique:
+      value: '1'

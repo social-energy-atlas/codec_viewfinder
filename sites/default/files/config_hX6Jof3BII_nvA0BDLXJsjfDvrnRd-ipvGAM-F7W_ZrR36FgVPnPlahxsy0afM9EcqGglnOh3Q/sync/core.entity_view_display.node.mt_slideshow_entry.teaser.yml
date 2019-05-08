@@ -1,0 +1,38 @@
+uuid: 74932eda-503f-4052-a45d-cfbf314ea3d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mt_slideshow_entry.body
+    - node.type.mt_slideshow_entry
+  module:
+    - text
+    - user
+id: node.mt_slideshow_entry.teaser
+targetEntityType: node
+bundle: mt_slideshow_entry
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_mt_bg_video_vimeo: true
+  field_mt_bg_video_volume: true
+  field_mt_bg_video_youtube: true
+  field_mt_slideshow: true
+  field_mt_slideshow_image: true
+  field_mt_slideshow_path: true
+  field_mt_slideshow_text: true

@@ -1,0 +1,23 @@
+uuid: 6324ca10-e100-4328-a515-25a9a4d29987
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_annual_prod
+    - node.type.codec_solar_installation
+id: node.codec_solar_installation.field_codec_annual_prod
+field_name: field_codec_annual_prod
+entity_type: node
+bundle: codec_solar_installation
+label: 'Annual Production'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: kW
+field_type: decimal

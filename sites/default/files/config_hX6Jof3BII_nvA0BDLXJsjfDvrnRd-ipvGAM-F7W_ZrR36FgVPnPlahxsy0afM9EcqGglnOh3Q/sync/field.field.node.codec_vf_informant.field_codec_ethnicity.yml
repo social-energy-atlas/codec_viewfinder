@@ -1,0 +1,21 @@
+uuid: b9329a32-8ab4-4af3-87a8-69c6a3a51e21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_ethnicity
+    - node.type.codec_vf_informant
+  module:
+    - options
+id: node.codec_vf_informant.field_codec_ethnicity
+field_name: field_codec_ethnicity
+entity_type: node
+bundle: codec_vf_informant
+label: Ethnicity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
