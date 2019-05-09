@@ -1,0 +1,20 @@
+uuid: 11619645-d1aa-4029-b93b-3972f72f4388
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_codec_pop_total
+field_name: field_codec_pop_total
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

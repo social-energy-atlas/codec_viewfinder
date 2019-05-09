@@ -1,0 +1,23 @@
+uuid: 209b53a5-d79d-419b-9edf-2ac50deb10e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_hh
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_hh
+field_name: field_codec_hh
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'Number of Households'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

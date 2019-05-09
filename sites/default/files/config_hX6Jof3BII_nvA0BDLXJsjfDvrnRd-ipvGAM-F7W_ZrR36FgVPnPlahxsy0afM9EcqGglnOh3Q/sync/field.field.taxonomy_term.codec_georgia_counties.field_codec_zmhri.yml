@@ -1,0 +1,23 @@
+uuid: df592b80-c659-44df-bc11-0c1352098ed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_zmhri
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_zmhri
+field_name: field_codec_zmhri
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'Zillow Median Home Rental Index'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: /month
+field_type: decimal

@@ -1,0 +1,20 @@
+uuid: 920e61b6-9799-4004-90ac-4b47ff9ccd4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_codec_pop_two
+field_name: field_codec_pop_two
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 239a4b44-dbf9-46aa-8d9a-0be9689b0cbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_codec_utilities
+field_name: field_codec_utilities
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

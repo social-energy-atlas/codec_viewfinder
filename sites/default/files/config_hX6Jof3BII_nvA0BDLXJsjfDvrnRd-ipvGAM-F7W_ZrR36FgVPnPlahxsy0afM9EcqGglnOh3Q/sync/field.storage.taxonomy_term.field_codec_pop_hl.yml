@@ -1,0 +1,20 @@
+uuid: 9a43aa11-6d59-4690-a429-f932384912d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_codec_pop_hl
+field_name: field_codec_pop_hl
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

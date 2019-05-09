@@ -1,0 +1,22 @@
+uuid: 1c1dd0e2-9f48-4b66-bef1-76dd945bcc0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_poly_map
+    - taxonomy.vocabulary.codec_georgia_counties
+  module:
+    - geofield
+id: taxonomy_term.codec_georgia_counties.field_codec_poly_map
+field_name: field_codec_poly_map
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: Map
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

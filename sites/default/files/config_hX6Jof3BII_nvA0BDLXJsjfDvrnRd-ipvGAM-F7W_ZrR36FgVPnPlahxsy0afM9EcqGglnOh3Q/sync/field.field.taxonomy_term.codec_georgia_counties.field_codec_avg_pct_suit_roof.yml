@@ -1,0 +1,23 @@
+uuid: eabf5c12-0001-46d4-aeed-a4d0d65f323f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_avg_pct_suit_roof
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_avg_pct_suit_roof
+field_name: field_codec_avg_pct_suit_roof
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'Average Percent Suitable Rooftop (Estimated)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '%'
+field_type: decimal

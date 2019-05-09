@@ -1,0 +1,23 @@
+uuid: d57681a8-5c5e-423d-af89-6c0b31c9e6db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_zmhvi
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_zmhvi
+field_name: field_codec_zmhvi
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'Zillow Median Home Value Index'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: '/sq. ft'
+field_type: decimal

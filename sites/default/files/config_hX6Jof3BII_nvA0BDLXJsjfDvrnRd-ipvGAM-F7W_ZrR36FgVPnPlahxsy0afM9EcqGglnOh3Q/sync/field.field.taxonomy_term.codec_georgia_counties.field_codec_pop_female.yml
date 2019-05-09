@@ -1,0 +1,23 @@
+uuid: 9ae5d210-cd98-4176-9623-19e8f1f696d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_pop_female
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_pop_female
+field_name: field_codec_pop_female
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: Female
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

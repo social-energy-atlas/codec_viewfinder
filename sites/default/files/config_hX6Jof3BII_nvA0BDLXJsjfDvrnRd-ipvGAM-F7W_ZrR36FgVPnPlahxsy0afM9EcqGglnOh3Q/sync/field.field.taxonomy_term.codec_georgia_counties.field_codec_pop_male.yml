@@ -1,0 +1,23 @@
+uuid: c1ea484d-f675-4c0e-9b37-8eadc2d290e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_pop_male
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_pop_male
+field_name: field_codec_pop_male
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: Male
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,23 @@
+uuid: 58e1f4ec-1a45-41f1-afd2-7e3c2b074d83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_pop_owner_occ
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_pop_owner_occ
+field_name: field_codec_pop_owner_occ
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'Owner Occupancy Rate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '%'
+field_type: float

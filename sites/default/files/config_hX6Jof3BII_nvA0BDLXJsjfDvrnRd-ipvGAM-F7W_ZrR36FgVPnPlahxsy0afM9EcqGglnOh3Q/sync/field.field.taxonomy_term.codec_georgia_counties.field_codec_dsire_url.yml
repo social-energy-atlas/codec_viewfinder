@@ -1,0 +1,23 @@
+uuid: cb682418-20d3-4c2f-aa3f-6043b8481fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_dsire_url
+    - taxonomy.vocabulary.codec_georgia_counties
+  module:
+    - link
+id: taxonomy_term.codec_georgia_counties.field_codec_dsire_url
+field_name: field_codec_dsire_url
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'DSIRE Search URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

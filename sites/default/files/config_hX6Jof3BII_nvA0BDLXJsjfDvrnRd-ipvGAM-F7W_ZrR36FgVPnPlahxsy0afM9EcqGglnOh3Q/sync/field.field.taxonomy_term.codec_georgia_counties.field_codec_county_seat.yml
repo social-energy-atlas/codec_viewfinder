@@ -1,0 +1,29 @@
+uuid: f6fbff6d-b9a7-49ff-9111-450870a10759
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_county_seat
+    - taxonomy.vocabulary.codec_ga_cities
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_county_seat
+field_name: field_codec_county_seat
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'County Seat'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_ga_cities: codec_ga_cities
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

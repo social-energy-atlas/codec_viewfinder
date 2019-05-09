@@ -1,0 +1,23 @@
+uuid: 315a4d24-a5da-4562-a66c-d0d2e195951f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_pop_baa
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_pop_baa
+field_name: field_codec_pop_baa
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'Black and African American'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

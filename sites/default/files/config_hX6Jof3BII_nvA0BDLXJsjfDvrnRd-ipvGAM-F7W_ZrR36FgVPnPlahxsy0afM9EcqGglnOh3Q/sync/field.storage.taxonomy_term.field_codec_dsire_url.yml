@@ -1,0 +1,19 @@
+uuid: eb3c8e75-fda8-428a-a28f-8d81478a3511
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_codec_dsire_url
+field_name: field_codec_dsire_url
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

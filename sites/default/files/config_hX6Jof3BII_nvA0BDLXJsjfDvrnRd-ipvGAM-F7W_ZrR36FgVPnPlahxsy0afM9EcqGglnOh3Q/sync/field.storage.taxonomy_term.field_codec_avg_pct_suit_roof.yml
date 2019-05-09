@@ -1,0 +1,20 @@
+uuid: b184ecd6-61ce-46e5-8f37-fd9d5120a377
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_codec_avg_pct_suit_roof
+field_name: field_codec_avg_pct_suit_roof
+entity_type: taxonomy_term
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

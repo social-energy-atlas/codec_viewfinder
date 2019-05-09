@@ -5,41 +5,118 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.codec_solar_installation.body
+    - field.field.node.codec_solar_installation.feeds_item
+    - field.field.node.codec_solar_installation.field_address
+    - field.field.node.codec_solar_installation.field_codec_annual_prod
+    - field.field.node.codec_solar_installation.field_codec_city_muni
+    - field.field.node.codec_solar_installation.field_codec_county_test
+    - field.field.node.codec_solar_installation.field_codec_electric_utility
+    - field.field.node.codec_solar_installation.field_codec_install_date
+    - field.field.node.codec_solar_installation.field_codec_installer
+    - field.field.node.codec_solar_installation.field_codec_location
+    - field.field.node.codec_solar_installation.field_codec_manufacturer
+    - field.field.node.codec_solar_installation.field_codec_sector
+    - field.field.node.codec_solar_installation.field_codec_system_capacity
+    - field.field.node.codec_solar_installation.field_codec_system_type
+    - field.field.node.codec_solar_installation.field_codec_zipcode
     - node.type.codec_solar_installation
   module:
-    - text
+    - datetime
     - user
 id: node.codec_solar_installation.teaser
 targetEntityType: node
 bundle: codec_solar_installation
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
+  field_codec_annual_prod:
+    type: number_decimal
+    weight: 6
     region: content
+    label: above
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_codec_city_muni:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_codec_county_test:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_codec_electric_utility:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_codec_install_date:
+    type: datetime_default
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+  field_codec_installer:
+    type: entity_reference_label
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_codec_manufacturer:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_codec_sector:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_codec_system_capacity:
+    type: number_decimal
+    weight: 5
+    region: content
+    label: above
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 9
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   addtoany: true
+  body: true
   feeds_item: true
   field_address: true
-  field_codec_annual_prod: true
-  field_codec_city_muni: true
-  field_codec_county_test: true
-  field_codec_electric_utility: true
-  field_codec_install_date: true
-  field_codec_installer: true
   field_codec_location: true
-  field_codec_manufacturer: true
-  field_codec_sector: true
-  field_codec_system_capacity: true
   field_codec_system_type: true
   field_codec_zipcode: true

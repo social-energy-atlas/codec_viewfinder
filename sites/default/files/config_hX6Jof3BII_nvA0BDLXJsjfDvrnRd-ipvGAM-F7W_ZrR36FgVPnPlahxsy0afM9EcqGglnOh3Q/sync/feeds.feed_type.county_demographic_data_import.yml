@@ -3,30 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.base_field_override.node.codec_county.title
-    - field.field.node.codec_county.field_codec_avg_pct_suit_roof
-    - field.field.node.codec_county.field_codec_county_seat
-    - field.field.node.codec_county.field_codec_dsire_url
-    - field.field.node.codec_county.field_codec_fips
-    - field.field.node.codec_county.field_codec_pop_a
-    - field.field.node.codec_county.field_codec_pop_aian
-    - field.field.node.codec_county.field_codec_pop_baa
-    - field.field.node.codec_county.field_codec_pop_female
-    - field.field.node.codec_county.field_codec_pop_hl
-    - field.field.node.codec_county.field_codec_pop_male
-    - field.field.node.codec_county.field_codec_pop_median_income
-    - field.field.node.codec_county.field_codec_pop_nhpi
-    - field.field.node.codec_county.field_codec_pop_owner_occ
-    - field.field.node.codec_county.field_codec_pop_total
-    - field.field.node.codec_county.field_codec_pop_two
-    - field.field.node.codec_county.field_codec_pop_veterans
-    - field.field.node.codec_county.field_codec_pop_white
-    - field.field.node.codec_county.field_codec_utilities
-    - field.field.node.codec_county.field_codec_zmhri
-    - field.field.node.codec_county.field_codec_zmhvi
-    - node.type.codec_county
+    - taxonomy.vocabulary.codec_georgia_counties
   module:
-    - node
+    - taxonomy
 label: 'County Demographic Data Import'
 id: county_demographic_data_import
 description: ''
@@ -40,17 +19,17 @@ parser_configuration:
   delimiter: ','
   no_headers: false
   line_limit: 100
-processor: 'entity:node'
+processor: 'entity:taxonomy_term'
 processor_configuration:
   update_existing: 2
   update_non_existent: _keep
   expire: -1
-  owner_feed_author: false
-  owner_id: 0
-  authorize: true
   skip_hash_check: false
   values:
-    type: codec_county
+    vid: codec_georgia_counties
+  owner_id: 0
+  authorize: false
+  owner_feed_author: false
 custom_sources:
   county:
     label: county
@@ -160,98 +139,4 @@ custom_sources:
     label: owner-occ
     value: owner-occ
     machine_name: owner_occ_import
-mappings:
-  -
-    target: title
-    map:
-      value: county
-    unique:
-      value: '1'
-  -
-    target: field_codec_fips
-    map:
-      value: fips
-  -
-    target: field_codec_county_seat
-    map:
-      target_id: county_seat
-    settings:
-      reference_by: title
-      feeds_item: guid
-      autocreate: '1'
-  -
-    target: field_codec_pop_total
-    map:
-      value: pop_tot
-  -
-    target: field_codec_pop_female
-    map:
-      value: dem_fem
-  -
-    target: field_codec_pop_male
-    map:
-      value: dem_male
-  -
-    target: field_codec_pop_white
-    map:
-      value: dem_white
-  -
-    target: field_codec_pop_baa
-    map:
-      value: dem_baa
-  -
-    target: field_codec_pop_aian
-    map:
-      value: dem_aian
-  -
-    target: field_codec_pop_a
-    map:
-      value: dem_a
-  -
-    target: field_codec_pop_nhpi
-    map:
-      value: dem_nhpi
-  -
-    target: field_codec_pop_two
-    map:
-      value: dem_two
-  -
-    target: field_codec_pop_hl
-    map:
-      value: dem_hl
-  -
-    target: field_codec_pop_veterans
-    map:
-      value: dem_vet
-  -
-    target: field_codec_pop_median_income
-    map:
-      value: med_income_
-  -
-    target: field_codec_dsire_url
-    map:
-      uri: dsire_url_import
-      title: dsire_ext_import
-  -
-    target: field_codec_zmhvi
-    map:
-      value: med_zhvi
-  -
-    target: field_codec_zmhri
-    map:
-      value: med_zhri
-  -
-    target: field_codec_utilities
-    map:
-      target_id: utility
-    settings:
-      reference_by: name
-      autocreate: '1'
-  -
-    target: field_codec_avg_pct_suit_roof
-    map:
-      value: avg_pct_suitable
-  -
-    target: field_codec_pop_owner_occ
-    map:
-      value: owner_occ_import
+mappings: {  }

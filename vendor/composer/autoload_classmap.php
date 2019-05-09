@@ -473,4 +473,5 @@ return array(
     'Symfony\\Component\\HttpKernel\\TerminableInterface' => $vendorDir . '/symfony/http-kernel/TerminableInterface.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
     'TypeError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+    'geoPHP' => $vendorDir . '/phayes/geophp/geoPHP.inc',
 );

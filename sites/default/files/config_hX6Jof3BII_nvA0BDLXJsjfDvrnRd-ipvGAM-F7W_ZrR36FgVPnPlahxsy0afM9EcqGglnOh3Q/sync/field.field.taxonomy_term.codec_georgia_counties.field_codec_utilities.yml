@@ -1,0 +1,29 @@
+uuid: 27c13589-745c-4bea-a20d-014202faab84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_utilities
+    - taxonomy.vocabulary.codec_georgia_counties
+    - taxonomy.vocabulary.codec_utilities
+id: taxonomy_term.codec_georgia_counties.field_codec_utilities
+field_name: field_codec_utilities
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: Utilities
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_utilities: codec_utilities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

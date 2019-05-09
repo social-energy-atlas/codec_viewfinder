@@ -1,0 +1,21 @@
+uuid: 80ae8dbd-7e16-4cde-9b13-e077fbea0ed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_sampling_plan
+    - taxonomy.vocabulary.codec_georgia_counties
+  module:
+    - text
+id: taxonomy_term.codec_georgia_counties.field_codec_sampling_plan
+field_name: field_codec_sampling_plan
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: 'CODEC Sampling Plan'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

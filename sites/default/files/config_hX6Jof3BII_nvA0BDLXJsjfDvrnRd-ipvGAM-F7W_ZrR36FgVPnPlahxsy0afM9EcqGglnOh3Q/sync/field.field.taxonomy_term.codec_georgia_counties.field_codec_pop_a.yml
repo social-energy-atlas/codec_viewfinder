@@ -1,0 +1,23 @@
+uuid: 327293db-2730-4921-a61e-77299892992a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_codec_pop_a
+    - taxonomy.vocabulary.codec_georgia_counties
+id: taxonomy_term.codec_georgia_counties.field_codec_pop_a
+field_name: field_codec_pop_a
+entity_type: taxonomy_term
+bundle: codec_georgia_counties
+label: Asian
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
