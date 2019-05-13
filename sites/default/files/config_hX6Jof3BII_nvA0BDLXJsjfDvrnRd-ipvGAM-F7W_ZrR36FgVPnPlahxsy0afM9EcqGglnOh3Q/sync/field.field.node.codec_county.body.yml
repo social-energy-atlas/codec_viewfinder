@@ -1,0 +1,22 @@
+uuid: 8a69e630-d8d0-48fb-9e2d-b0b3da4e631c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.codec_county
+  module:
+    - text
+id: node.codec_county.body
+field_name: body
+entity_type: node
+bundle: codec_county
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

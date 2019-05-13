@@ -2,7 +2,7 @@ uuid: 15665393-3a1f-401d-b536-7c703226a7f2
 langcode: en
 status: true
 dependencies: {  }
-name: 'CODEC Utilities'
+name: Utilities
 vid: codec_utilities
 description: ''
 weight: 0

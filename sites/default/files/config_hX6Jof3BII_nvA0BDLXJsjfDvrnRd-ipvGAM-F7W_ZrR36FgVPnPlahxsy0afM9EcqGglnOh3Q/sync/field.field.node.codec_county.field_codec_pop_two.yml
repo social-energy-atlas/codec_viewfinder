@@ -1,0 +1,23 @@
+uuid: ab6e6c16-aa93-4f3d-85d2-695fec269a38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_two
+    - node.type.codec_county
+id: node.codec_county.field_codec_pop_two
+field_name: field_codec_pop_two
+entity_type: node
+bundle: codec_county
+label: 'Two or More Racial Identities'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

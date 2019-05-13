@@ -1,0 +1,23 @@
+uuid: d9bc7c3b-c64f-4bd4-b4f7-3f57dc425a72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_female
+    - node.type.codec_county
+id: node.codec_county.field_codec_pop_female
+field_name: field_codec_pop_female
+entity_type: node
+bundle: codec_county
+label: Female
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

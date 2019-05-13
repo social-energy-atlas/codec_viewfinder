@@ -1,0 +1,18 @@
+uuid: 992ea871-90c4-42db-a786-6600153b7ccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.codec_county
+id: node.codec_county.title
+field_name: title
+entity_type: node
+bundle: codec_county
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

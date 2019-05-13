@@ -1,0 +1,23 @@
+uuid: 00efbc45-3060-4270-b0bb-47d1f883dc0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_avg_pct_suit_roof
+    - node.type.codec_city
+id: node.codec_city.field_codec_avg_pct_suit_roof
+field_name: field_codec_avg_pct_suit_roof
+entity_type: node
+bundle: codec_city
+label: 'Average Percent Suitable Rooftop (Estimated)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

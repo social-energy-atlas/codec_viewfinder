@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.codec_georgia_counties.feeds_item
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_avg_pct_suit_roof
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_county_seat
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_dsire_url
@@ -29,62 +28,10 @@ dependencies:
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhvi
     - taxonomy.vocabulary.codec_georgia_counties
   module:
-    - field_group
     - geofield
     - link
     - path
     - text
-third_party_settings:
-  field_group:
-    group_population:
-      children:
-        - field_codec_pop_total
-        - field_codec_pop_female
-        - field_codec_pop_male
-        - field_codec_pop_aian
-        - field_codec_pop_a
-        - field_codec_pop_baa
-        - field_codec_pop_hl
-        - field_codec_pop_nhpi
-        - field_codec_pop_white
-        - field_codec_pop_two
-        - field_codec_pop_veterans
-      parent_name: ''
-      weight: 5
-      format_type: fieldset
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        required_fields: true
-      label: Population
-    group_income:
-      children:
-        - field_codec_pop_median_income
-        - field_codec_hh
-      parent_name: ''
-      weight: 6
-      format_type: fieldset
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        required_fields: true
-      label: Income
-    group_housing:
-      children:
-        - field_codec_pop_owner_occ
-        - field_codec_zmhri
-        - field_codec_zmhvi
-      parent_name: ''
-      weight: 7
-      format_type: fieldset
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-        required_fields: true
-      label: Housing
 id: taxonomy_term.codec_georgia_counties.default
 targetEntityType: taxonomy_term
 bundle: codec_georgia_counties
@@ -92,21 +39,21 @@ mode: default
 content:
   description:
     type: text_textarea
-    weight: 4
+    weight: 0
     region: content
     settings:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
   field_codec_avg_pct_suit_roof:
-    weight: 8
+    weight: 33
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_county_seat:
-    weight: 2
+    weight: 36
     settings:
       match_operator: CONTAINS
       size: 60
@@ -115,7 +62,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_codec_dsire_url:
-    weight: 10
+    weight: 37
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -123,62 +70,62 @@ content:
     type: link_default
     region: content
   field_codec_fips:
-    weight: 1
+    weight: 39
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_hh:
-    weight: 44
+    weight: 45
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_poly_map:
-    weight: 3
+    weight: 42
     settings: {  }
     third_party_settings: {  }
     type: geofield_default
     region: content
   field_codec_pop_a:
-    weight: 51
+    weight: 32
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_pop_aian:
-    weight: 50
+    weight: 31
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_pop_baa:
-    weight: 52
+    weight: 34
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_pop_female:
-    weight: 48
+    weight: 38
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_pop_hl:
-    weight: 53
+    weight: 40
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_pop_male:
-    weight: 49
+    weight: 41
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -192,14 +139,14 @@ content:
     type: number
     region: content
   field_codec_pop_nhpi:
-    weight: 54
+    weight: 44
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_pop_owner_occ:
-    weight: 13
+    weight: 46
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -213,28 +160,28 @@ content:
     type: number
     region: content
   field_codec_pop_two:
-    weight: 56
+    weight: 48
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_pop_veterans:
-    weight: 57
+    weight: 50
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_pop_white:
-    weight: 55
+    weight: 53
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_sampling_plan:
-    weight: 11
+    weight: 35
     settings:
       rows: 5
       placeholder: ''
@@ -242,7 +189,7 @@ content:
     type: text_textarea
     region: content
   field_codec_utilities:
-    weight: 9
+    weight: 49
     settings:
       match_operator: CONTAINS
       size: 60
@@ -251,14 +198,14 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_codec_zmhri:
-    weight: 14
+    weight: 51
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_codec_zmhvi:
-    weight: 15
+    weight: 52
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -266,7 +213,7 @@ content:
     region: content
   name:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -274,9 +221,8 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 12
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  feeds_item: true
+hidden: {  }

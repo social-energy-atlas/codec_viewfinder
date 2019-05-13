@@ -1,0 +1,269 @@
+uuid: 499c8975-3075-4389-bd86-ac9971452ceb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.codec_city.body
+    - field.field.node.codec_city.field_codec_avg_pct_suit_roof
+    - field.field.node.codec_city.field_codec_county
+    - field.field.node.codec_city.field_codec_dsire_url
+    - field.field.node.codec_city.field_codec_municode_url
+    - field.field.node.codec_city.field_codec_poly_map
+    - field.field.node.codec_city.field_codec_pop_a
+    - field.field.node.codec_city.field_codec_pop_aian
+    - field.field.node.codec_city.field_codec_pop_baa
+    - field.field.node.codec_city.field_codec_pop_female
+    - field.field.node.codec_city.field_codec_pop_hl
+    - field.field.node.codec_city.field_codec_pop_male
+    - field.field.node.codec_city.field_codec_pop_median_income
+    - field.field.node.codec_city.field_codec_pop_nhpi
+    - field.field.node.codec_city.field_codec_pop_total
+    - field.field.node.codec_city.field_codec_pop_two
+    - field.field.node.codec_city.field_codec_pop_veterans
+    - field.field.node.codec_city.field_codec_pop_white
+    - field.field.node.codec_city.field_codec_utilities
+    - field.field.node.codec_city.field_codec_zipcode
+    - field.field.node.codec_city.field_codec_zmhri
+    - field.field.node.codec_city.field_codec_zmhvi
+    - node.type.codec_city
+  module:
+    - geofield
+    - link
+    - path
+    - scheduler
+    - text
+id: node.codec_city.default
+targetEntityType: node
+bundle: codec_city
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_codec_avg_pct_suit_roof:
+    weight: 124
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_county:
+    weight: 127
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_codec_dsire_url:
+    weight: 128
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_codec_municode_url:
+    weight: 126
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_codec_poly_map:
+    weight: 132
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  field_codec_pop_a:
+    weight: 123
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_aian:
+    weight: 122
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_baa:
+    weight: 125
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_female:
+    weight: 129
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_hl:
+    weight: 130
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_male:
+    weight: 131
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_median_income:
+    weight: 133
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_nhpi:
+    weight: 134
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_total:
+    weight: 136
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_two:
+    weight: 137
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_veterans:
+    weight: 139
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_white:
+    weight: 140
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_utilities:
+    weight: 138
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_codec_zipcode:
+    weight: 143
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_zmhri:
+    weight: 141
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_zmhvi:
+    weight: 142
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
