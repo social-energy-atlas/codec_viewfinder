@@ -1,4 +1,4 @@
-uuid: cb71c62c-41d0-4d27-9b6e-490a1ebecd82
+uuid: fe510133-9c4c-470f-a882-ca93669fcc0b
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - enterpriseplus
-_core:
-  default_config_hash: g0eTSuS_cHdxWMgm8lnx_K7zN9MI1gFQv5Ds1Js1MG0
-id: enterpriseplus_branding
+id: sitebranding
 theme: enterpriseplus
-region: header
-weight: -10
+region: slideout
+weight: -8
 provider: null
 plugin: system_branding_block
 settings:

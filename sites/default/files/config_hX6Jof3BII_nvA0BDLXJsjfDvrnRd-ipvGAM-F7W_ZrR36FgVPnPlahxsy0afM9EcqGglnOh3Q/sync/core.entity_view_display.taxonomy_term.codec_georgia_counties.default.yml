@@ -296,4 +296,5 @@ content:
     third_party_settings: {  }
     type: number_decimal
     region: content
-hidden: {  }
+hidden:
+  feeds_item: true
