@@ -21,8 +21,10 @@ dependencies:
     - taxonomy.vocabulary.codec_solar_companies
     - taxonomy.vocabulary.codec_utilities
   content:
-    - 'taxonomy_term:codec_pv_system_types:548585ea-c208-4fc3-9a9c-f808b7126f5b'
-    - 'taxonomy_term:codec_pv_system_types:837d868c-3b9e-496e-88b7-289a094fa20e'
+    - 'taxonomy_term:codec_ga_cities:69ba75bb-49ca-4fc4-8f17-7da3a79f2eb3'
+    - 'taxonomy_term:codec_georgia_counties:99d06d75-c1af-43d2-b772-7567fa9bf90e'
+    - 'taxonomy_term:codec_pv_system_types:97bbb8fb-5ebf-4cc7-8292-8c609c35acb6'
+    - 'taxonomy_term:codec_pv_system_types:ce2da0ca-0038-4ef7-b110-24a9f181f3d9'
   module:
     - better_exposed_filters
     - datetime
@@ -144,6 +146,66 @@ display:
               more_options:
                 is_secondary: true
             field_codec_system_capacity_value:
+              bef_format: bef_slider
+              slider_options:
+                bef_slider_min: !!float 0
+                bef_slider_max: !!float 100
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: horizontal
+              more_options:
+                is_secondary: true
+            field_codec_pop_total_value:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: ''
+              more_options:
+                is_secondary: true
+            field_codec_pop_owner_occ_value:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: ''
+              more_options:
+                is_secondary: true
+            field_codec_pop_median_income_value:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: ''
+              more_options:
+                is_secondary: true
+            field_codec_zmhri_value:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: ''
+              more_options:
+                is_secondary: true
+            field_codec_zmhvi_value:
+              bef_format: default
+              slider_options:
+                bef_slider_min: null
+                bef_slider_max: null
+                bef_slider_step: !!float 1
+                bef_slider_animate: ''
+                bef_slider_orientation: ''
+              more_options:
+                is_secondary: true
+            field_codec_avg_pct_suit_roof_value:
               bef_format: bef_slider
               slider_options:
                 bef_slider_min: !!float 0
@@ -891,7 +953,16 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_codec_county_test:
+          id: field_codec_county_test
+          table: node__field_codec_county_test
+          field: field_codec_county_test
+          relationship: none
+          group_type: group
+          admin_label: 'field_codec_county_test: Taxonomy term'
+          required: true
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       filter_groups:
@@ -1846,9 +1917,7 @@ display:
           group_type: group
           admin_label: ''
           operator: or
-          value:
-            91: 91
-            483: 483
+          value: {  }
           group: 1
           exposed: false
           expose:
@@ -2312,12 +2381,42 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
             codec_solar_installation: codec_solar_installation
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
-          group: 1
         field_codec_sector_target_id:
           id: field_codec_sector_target_id
           table: node__field_codec_sector
@@ -2372,8 +2471,8 @@ display:
           admin_label: ''
           operator: or
           value:
-            91: 91
-            483: 483
+            194: 194
+            465: 465
           group: 1
           exposed: false
           expose:
@@ -2700,6 +2799,270 @@ display:
             use_operator: false
             operator: field_codec_system_capacity_value_op
             identifier: field_codec_system_capacity_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_codec_pop_total_value:
+          id: field_codec_pop_total_value
+          table: taxonomy_term__field_codec_pop_total
+          field: field_codec_pop_total_value
+          relationship: field_codec_county_test
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_codec_pop_total_value_op
+            label: 'County Total Population'
+            description: ''
+            use_operator: false
+            operator: field_codec_pop_total_value_op
+            identifier: field_codec_pop_total_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_codec_pop_owner_occ_value:
+          id: field_codec_pop_owner_occ_value
+          table: taxonomy_term__field_codec_pop_owner_occ
+          field: field_codec_pop_owner_occ_value
+          relationship: field_codec_county_test
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_codec_pop_owner_occ_value_op
+            label: 'County Owner Occupancy Rate'
+            description: ''
+            use_operator: false
+            operator: field_codec_pop_owner_occ_value_op
+            identifier: field_codec_pop_owner_occ_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_codec_pop_median_income_value:
+          id: field_codec_pop_median_income_value
+          table: taxonomy_term__field_codec_pop_median_income
+          field: field_codec_pop_median_income_value
+          relationship: field_codec_county_test
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_codec_pop_median_income_value_op
+            label: 'County Median Income'
+            description: ''
+            use_operator: false
+            operator: field_codec_pop_median_income_value_op
+            identifier: field_codec_pop_median_income_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_codec_zmhri_value:
+          id: field_codec_zmhri_value
+          table: taxonomy_term__field_codec_zmhri
+          field: field_codec_zmhri_value
+          relationship: field_codec_county_test
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_codec_zmhri_value_op
+            label: 'Zillow Median Home Rental Index'
+            description: ''
+            use_operator: false
+            operator: field_codec_zmhri_value_op
+            identifier: field_codec_zmhri_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_codec_zmhvi_value:
+          id: field_codec_zmhvi_value
+          table: taxonomy_term__field_codec_zmhvi
+          field: field_codec_zmhvi_value
+          relationship: field_codec_county_test
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_codec_zmhvi_value_op
+            label: 'Zillow Median Home Value Index'
+            description: ''
+            use_operator: false
+            operator: field_codec_zmhvi_value_op
+            identifier: field_codec_zmhvi_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: numeric
+        field_codec_avg_pct_suit_roof_value:
+          id: field_codec_avg_pct_suit_roof_value
+          table: taxonomy_term__field_codec_avg_pct_suit_roof
+          field: field_codec_avg_pct_suit_roof_value
+          relationship: field_codec_county_test
+          group_type: group
+          admin_label: ''
+          operator: between
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_codec_avg_pct_suit_roof_value_op
+            label: 'Average Percent Suitable Rooftop'
+            description: ''
+            use_operator: false
+            operator: field_codec_avg_pct_suit_roof_value_op
+            identifier: field_codec_avg_pct_suit_roof_value
             required: false
             remember: false
             multiple: false

@@ -1,0 +1,20 @@
+uuid: fa26da7f-6fcc-4b5b-a573-a6ca68b91244
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_codec_pop_white
+field_name: field_codec_pop_white
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

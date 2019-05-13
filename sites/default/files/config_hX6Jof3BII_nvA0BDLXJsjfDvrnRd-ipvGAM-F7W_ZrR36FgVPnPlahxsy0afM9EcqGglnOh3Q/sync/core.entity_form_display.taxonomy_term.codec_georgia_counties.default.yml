@@ -22,6 +22,7 @@ dependencies:
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_total
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_two
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_veterans
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_white
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_sampling_plan
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_utilities
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhri
@@ -38,12 +39,12 @@ bundle: codec_georgia_counties
 mode: default
 content:
   description:
-    type: text_textfield
+    type: text_textarea
     weight: 0
     region: content
     settings:
-      size: 60
       placeholder: ''
+      rows: 5
     third_party_settings: {  }
   field_codec_avg_pct_suit_roof:
     weight: 33
@@ -85,10 +86,9 @@ content:
     region: content
   field_codec_poly_map:
     weight: 42
-    settings:
-      html5_geolocation: false
+    settings: {  }
     third_party_settings: {  }
-    type: geofield_latlon
+    type: geofield_default
     region: content
   field_codec_pop_a:
     weight: 32
@@ -169,6 +169,13 @@ content:
     region: content
   field_codec_pop_veterans:
     weight: 50
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_codec_pop_white:
+    weight: 53
     settings:
       placeholder: ''
     third_party_settings: {  }

@@ -1,0 +1,16 @@
+uuid: a3ad4ff1-edf9-400f-b426-5687b66f6e6a
+langcode: en
+status: true
+dependencies: {  }
+id: codec_county_solar_calc
+label: 'County Solar Calculations'
+events:
+  -
+    event_name: 'rules_entity_update:node'
+description: ''
+tags:
+  - calculations
+  - solar
+config_version: '3'
+expression:
+  id: rules_rule
