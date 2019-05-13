@@ -1,0 +1,99 @@
+uuid: a8b86ea6-e60d-48db-88d2-988635b2cc44
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.map_pin
+    - field.field.taxonomy_term.codec_georgia_counties.feeds_item
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_avg_pct_suit_roof
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_county_seat
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_dsire_url
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_fips
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_hh
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_poly_map
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_a
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_aian
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_baa
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_female
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_hl
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_male
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_median_income
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_nhpi
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_owner_occ
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_total
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_two
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_veterans
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_sampling_plan
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_solar_nonresidential
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_solar_residential
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_solar_utility
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_utilities
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhri
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhvi
+    - taxonomy.vocabulary.codec_georgia_counties
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.codec_georgia_counties.map_pin
+targetEntityType: taxonomy_term
+bundle: codec_georgia_counties
+mode: map_pin
+content:
+  field_codec_avg_pct_suit_roof:
+    type: number_decimal
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_codec_pop_median_income:
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_total:
+    weight: 0
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  description: true
+  feeds_item: true
+  field_codec_county_seat: true
+  field_codec_dsire_url: true
+  field_codec_fips: true
+  field_codec_hh: true
+  field_codec_poly_map: true
+  field_codec_pop_a: true
+  field_codec_pop_aian: true
+  field_codec_pop_baa: true
+  field_codec_pop_female: true
+  field_codec_pop_hl: true
+  field_codec_pop_male: true
+  field_codec_pop_nhpi: true
+  field_codec_pop_owner_occ: true
+  field_codec_pop_two: true
+  field_codec_pop_veterans: true
+  field_codec_pop_white: true
+  field_codec_sampling_plan: true
+  field_codec_solar_nonresidential: true
+  field_codec_solar_residential: true
+  field_codec_solar_utility: true
+  field_codec_utilities: true
+  field_codec_zmhri: true
+  field_codec_zmhvi: true

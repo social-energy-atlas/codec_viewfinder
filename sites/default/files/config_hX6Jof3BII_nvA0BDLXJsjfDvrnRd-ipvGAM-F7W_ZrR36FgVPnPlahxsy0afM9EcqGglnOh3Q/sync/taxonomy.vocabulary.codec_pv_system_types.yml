@@ -2,7 +2,7 @@ uuid: 935f9f41-e29d-48f8-ab8b-121c3dc6bdef
 langcode: en
 status: true
 dependencies: {  }
-name: 'Solar PV System Types'
+name: 'CODEC Solar PV System Types'
 vid: codec_pv_system_types
 description: ''
 weight: 0

@@ -1,0 +1,160 @@
+county,fips,state,county-seat,pop-tot,dem-fem,dem-male,dem-white,dem-baa,dem-aian,dem-a,dem-nhpi,dem-two,dem-hl,dem-vet,dem-hh,med-income ,owner-occ,dsire-url,dsire-text,med-zhvi,med-zhri,utility,avg-pct-suitable
+Appling,13001,GA,Baxley,18428,9232,9196,12807,3575,111,166,37,221,1769,1053,8381,37135,71.1,,,,,Georgia Power Company;Satilla REMC,86.44
+Atkinson,13003,GA,Peason,8273,4128,4145,4649,1448,116,74,91,174,2085,385,3429,30933,72,,,,,Georgia Power Company;Satilla REMC;Slash Pine EMC,88.15
+Bacon,13005,GA,Alma,11372,5766,5606,8313,1888,34,68,23,182,989,559,4715,37162,68.6,,,,,Georgia Power Company;Satilla REMC,88.32
+Baker,13007,GA,Newton,3150,1619,1531,1481,1446,13,35,3,35,176,178,1620,44297,73.6,,,,,Georgia Power Company;Mitchell EMC;Okefenoke REMC;Three Notch EMC,88.17
+Baldwin,13009,GA,Milldgeville,45144,22301,22843,23746,19141,135,813,45,542,993,2911,20277,32460,53.8,,,66.08,0.62,Georgia Power Company;Oconee EMC;Tri-County EMC;Washington EMC,76.29
+Banks,13011,GA,Homer,18397,9015,9382,16153,534,92,239,37,276,1233,1321,7527,41427,75.5,,,89.58,0.7,Georgia Power Company;Jackson EMC,84.07
+Barrow,13013,GA,Winder,77126,39257,37869,56071,9101,386,2854,77,1697,7944,4697,27602,52012,72.8,,,93.5,0.73,Georgia Power Company;Jackson EMC;Walton EMC,84.86
+Bartow,13015,GA,Cartersville,103807,52630,51177,81073,11523,623,934,104,2076,8824,6928,40196,48893,64.3,,,93.5,0.71,Amicalola EMC;Cartersville (City);Cobb EMC;Georgia Power Company;GreyStone Power,83.02
+Ben Hill,13017,GA,Fitzgerald,17243,8984,8259,9742,6139,121,155,17,224,1052,912,6413,29994,61,,,,0.6,Fitzgerald (City);Georgia Power Company;Irwin EMC;Satilla REMC,86.9
+Berrien,13019,GA,Nashville,18993,9610,9383,16467,2013,76,209,19,228,969,1372,6958,31835,71.2,,,,0.61,Colquitt EMC;Georgia Power Company;Irwin EMC;Slash Pine EMC,88.18
+Bibb,13021,GA,Macon,152760,80963,71797,62784,84018,458,3055,153,2291,4888,10456,57111,36519,52.4,,,52.75,0.6,Central Georgia EMC;Flint Energies;Georgia Power Company;Southern Rivers Energy;Oconee EMC;Tri-County EMC,56.39
+Bleckley,13023,GA,Cochran,12970,6757,6213,9157,3476,26,156,0,156,363,803,4113,38991,72.8,,,,,Georgia Power Company;Ocmulgee EMC;Oconee EMC,86.8
+Brantley,13025,GA,Nahunta,18355,9288,9067,16960,606,73,55,0,312,385,1225,6581,37206,79.9,,,,,Georgia Power Company;Okefenoke REMC;Satilla REMC,87.28
+Brooks,13027,GA,Quitman,15687,7985,7702,8926,5522,63,141,31,235,926,1607,6577,32663,69.2,,,,0.61,Colquitt EMC;Georgia Power Company;Grady EMC;Quitman (City),87.41
+Bryan,13029,GA,Pembroke,36230,18369,17861,26774,5290,181,725,72,1196,2572,3525,11441,63327,68.3,,,110.42,0.81,Canoochee EMC;Coastal Electric Cooperative;Excelsior EMC;Georgia Power Company,86.29
+Bulloch,13031,GA,Statesboro,74722,37959,36763,47673,22118,299,1196,75,1270,2765,4096,26128,36032,49.6,,,73.92,0.6,Canoochee EMC;Excelsior EMC;Georgia Power Company;Planters EMC,87.72
+Burke,13033,GA,Waynesboro,22688,11820,10868,10754,10845,91,113,23,340,703,1497,8102,33641,70.6,,,48.42,,Georgia Power Company;Jefferson Energy;Planters EMC,87.53
+Butts,13035,GA,Jackson,23817,11146,12671,15934,6716,71,143,0,333,762,1511,7774,41667,71.7,,,71,0.7,Central Georgia EMC;Georgia Power Company;Jackson (City);Snapping Shoals EMC,83.28
+Calhoun,13037,GA,Morgan,6324,2504,3820,2043,3896,38,51,19,89,297,325,1836,25513,65.5,,,34.92,,Diverse Power-Pataula District Georgia Power Company;Mitchell EMC,88.85
+Camden,13039,GA,Woodbine,53008,25497,27511,37159,10231,371,742,106,1590,3446,7416,18638,52473,61.1,,,93.67,0.71,Georgia Power Company;Okefenoke REMC,86.52
+Candler,13043,GA,Metter,10910,5564,5346,6786,2706,33,120,22,142,1233,872,3909,30185,60.6,,,,,Excelsior EMC;Georgia Power Company,83.97
+Carroll,13045,GA,Carrollton,116261,59409,56852,82662,22322,698,1163,116,2558,8022,6948,40074,43586,62.8,,,82.25,0.65,Carroll EMC;Georgia Power Company;GreyStone Power,83.6
+Catoosa,13047,GA,Ringgold,66398,34195,32203,60422,1859,266,930,66,1129,1926,4519,23943,50876,75,,,92,0.77,Georgia Power Company;North Georgia EMC,83.9
+Charlton,13049,GA,Folkston,12497,5149,7348,7823,3899,87,87,0,225,462,984,3524,42778,78.8,,,,,Georgia Power Company;Okefenoke REMC;Slash Pine EMC,88.97
+Chatham,13051,GA,Savannah,289082,149744,139338,141650,117078,867,8383,289,6360,18212,24548,104912,47218,54.6,,,95.33,0.85,Georgia Power Company;Canoochee EMC,84.5
+Chattahoochee,13053,GA,Cusseta,10922,3440,7482,6488,2206,164,328,87,393,1573,785,2599,43378,27.4,,,,0.68,Amicalola EMC;Flint Energies;Georgia Power Company;Sumter EMC,82.1
+Chattooga,13055,GA,Summerville,24824,12164,12660,20554,2482,99,149,74,472,1241,1491,9364,32913,66.3,,,,,Georgia Power Company;North Georgia EMC,81.53
+Cherokee,13057,GA,Canton,241689,122536,119153,192868,16435,1208,4592,242,5075,24169,14603,79133,68926,77.4,,,117.17,0.81,Amicalola EMC;Cobb EMC;Georgia Power Company;Sawnee EMC;Tri-State REMC,82.42
+Clarke,13059,GA,Athens,124707,65222,59485,76445,35167,499,5487,125,2619,13468,4696,44901,33116,38.5,,,92.17,0.73,Georgia Power Company;Jackson EMC;Rayle EMC;Walton EMC,80.7
+Clay,13061,GA,Fort Gaines,3020,1589,1431,1108,1812,12,15,0,33,45,215,1160,22120,64.1,,,,,Diverse Power-Pataula District;Georgia Power Company;Three Notch EMC,87.31
+Clayton,13063,GA,Jonesboro,279462,148115,131347,30182,198418,1677,14811,279,6428,36610,17190,90182,42470,51,,,58.75,0.67,Central Georgia EMC;College Park (City);Coweta-Fayette EMC;Georgia Power Company,77.95
+Clinch,13065,GA,Homerville,6829,3469,3360,4453,1871,61,20,7,123,362,412,2524,24848,71.2,,,,,Georgia Power Company;Slash Pine EMC,88.63
+Cobb,13067,GA,Marietta,748150,387542,360608,394275,210230,3741,39652,748,18704,96511,43499,271975,68818,63.9,,,117.83,0.86,Acworth (City);Cobb EMC;Georgia Power Company;GreyStone Power;Marietta (City),77.14
+Coffee,13069,GA,Douglas,43012,20990,22022,25076,12129,215,430,43,559,4989,2110,14110,34536,66,,,51.75,,Douglas (City);Georgia Power Company;Satilla REMC,87.99
+Colquitt,13071,GA,Moultrie,45708,23037,22671,25505,10696,640,411,91,503,8959,2289,15380,33968,61.9,,,51,,Colquitt EMC;Doerun (City);Georgia Power Company;Grady EMC;Mitchell EMC;Moultrie (City),85.35
+Columbia,13073,GA,Evans,147450,75347,72103,102625,25509,590,6340,295,4571,9732,14569,45623,71962,77.9,,,91.25,0.67,Georgia Power Company;Jefferson Energy,80.49
+Cook,13075,GA,Adel,17167,8893,8274,11210,4618,69,137,17,206,1013,1010,5979,35199,68.8,,,,0.58,Adel (City);Colquitt EMC;Georgia Power Company,87.58
+Coweta,13077,GA,Newnan,140526,72090,68436,100617,25435,562,2811,141,2811,9556,9930,49457,65244,72.6,,,101.08,0.76,Coweta-Fayette EMC;Diverse Power;Georgia Power Company;Grantville (City);GreyStone Power;Newnan (City);Southern Rivers Energy,84.02
+Crawford,13079,GA,Knoxville,12322,6124,6198,9118,2563,86,99,12,160,382,952,4643,40459,78,,,,0.63,Flint Energies;Georgia Power Company;Southern Rivers Energy;Upson EMC,85
+Crisp,13081,GA,Cordele,22721,11997,10724,11383,10111,68,273,23,250,750,1570,8509,31672,57.3,,,,0.62,Crisp County Power Commission;Georgia Power Company,88.08
+Dade,13083,GA,Trenton,16257,8275,7982,15265,195,98,163,16,195,374,1212,6057,43463,76.1,,,,0.71,Georgia Power Company,82.02
+Dawson,13085,GA,Dawsonville,23604,11802,11802,21928,189,94,142,24,378,991,1448,8522,59265,77.5,,,123.75,0.72,Amicalola EMC;Georgia Power Company;Sawnee EMC,81.64
+Decatur,13087,GA,Bainbridge,26822,13840,12982,13626,11319,215,161,27,322,1582,1280,10438,33514,59.9,,,95.75,0.83,Brinson (City);Georgia Power Company;Grady EMC;Mitchell EMC;Three Notch EMC,87.3
+DeKalb,13089,GA,Decatur,740321,389409,350912,215433,409398,3702,47381,740,15547,62927,39617,270903,52623,54,,,64.33,,Georgia Power Company;Snapping Shoals EMC;Walton EMC,63.94
+Dodge,13091,GA,Eastman,20563,9850,10713,13469,6128,82,103,41,247,740,1061,7987,35544,64.1,,,,0.63,Georgia Power Company;Little Ocmulgee EMC;Oconee EMC,86.04
+Dooly,13093,GA,Vienna,13763,6290,7473,5822,6854,28,110,14,138,1060,1091,5140,33319,64.1,,,,,Flint Energies;Georgia Power Company;Middle Georgia EMC,88.61
+Dougherty,13095,GA,Albany,90017,48429,41588,23044,63192,270,810,180,1080,2430,6300,35156,33605,45.8,,,49.5,0.53,Albany (City);Georgia Power Company;Sumter EMC,51.18
+Douglas,13097,GA,Douglasville,142224,74525,67699,59876,65281,569,2418,284,3556,13369,9946,47534,57384,65.7,,,85.42,0.73,Georgia Power Company;GreyStone Power,84.11
+Early,13099,GA,Blakely,10339,5490,4849,4756,5190,52,72,0,93,227,628,4023,28599,64.5,,,,,Blakely (City);Georgia Power Company;Mitchell EMC;Three Notch EMC,87.64
+Echols,13101,GA,Statenville,3962,1957,2005,2468,206,111,32,8,71,1173,173,1423,35354,60.7,,,,,Georgia Power Company;Slash Pine EMC,89.05
+Effingham,13103,GA,Springfield,58712,29415,29297,46382,8102,235,646,59,1174,2407,4918,18695,62820,77,,,97.58,0.76,Excelsior EMC;Georgia Power Company;Planters EMC,86.67
+Elbert,13105,GA,Elberton,19143,9935,9208,12232,5571,77,153,0,230,1072,1612,7611,35739,70,,,,0.64,Elberton (City);Georgia Power Company;Hart EMC,84.47
+Emanuel,13107,GA,Swainsboro,22635,11476,11159,13536,7809,91,136,0,226,1041,1254,8227,31522,66.4,,,,0.59,Altamaha EMC;Canoochee EMC;Excelsior EMC;Georgia Power Company;Jefferson Energy;Planters EMC;Washington EMC,86.96
+Evans,13109,GA,Claxton,10670,5495,5175,6082,3276,64,128,43,128,1259,725,3950,40594,64.5,,,,0.62,Canoochee EMC;Excelsior EMC;Georgia Power Company,83.86
+Fannin,13111,GA,Blue Ridge,24900,12774,12126,23655,199,100,125,0,324,548,2117,9927,39011,77.3,,,108.5,0.99,Amicalola EMC;Blue Ridge Mountain EMC;Georgia Power Company;Tri-State EMC,81.04
+Fayette,13113,GA,Fayetteville,111627,57488,54139,70883,25674,447,5470,112,2456,7926,10519,38933,81689,80.7,,,116.08,0.84,Central Georgia EMC;Coweta-Fayette EMC;Georgia Power Company;GreyStone Power,85.12
+Floyd,13115,GA,Rome,96560,49825,46735,69234,14291,772,1448,290,1738,10428,6983,35114,42955,59.9,,,65.92,0.64,Georgia Power Company;North Georgia EMC,83.03
+Forsyth,13117,GA,Cumming,221009,111168,109841,162884,7956,1105,26521,221,3757,20554,10310,66500,91842,84.2,,,133.75,0.79,Amicalola EMC;Georgia Power Company;Sawnee EMC,81.29
+Franklin,13119,GA,Carnesville,22320,11361,10959,18704,2120,89,223,22,357,1027,1113,8260,37298,67.7,,,69.75,0.67,Georgia Power Company;Hart EMC,84.53
+Fulton,13121,GA,Atlanta,1023336,528041,495295,410358,455385,3070,71634,0,21490,74704,44718,385103,58851,51.2,,,142.67,0.94,Cobb EMC;College Park (City);Coweta-Fayette EMC;East Point (City);Fairburn (City);Georgia Power Company;GreyStone Power;Palmetto (City);Sawnee EMC,72.75
+Gilmer,13123,GA,Ellijay,29733,14896,14837,28454,357,208,178,149,357,3479,2369,16761,43775,75.2,,,101.83,0.78,Amicalola EMC;Georgia Power Company,81.14
+Glascock,13125,GA,Gibson,3006,1521,1485,2663,277,15,3,0,45,45,165,1497,43884,76.4,,,,,Georgia Power Company;Jefferson Energy;Washington EMC,84.97
+Glynn,13127,GA,Brunswick,84502,44533,39969,58560,22478,423,1268,169,1521,5831,6889,42419,46475,60.6,,,99.17,,Georgia Power Company;Okefenoke REMC,90.46
+Gordon,13129,GA,Calhoun,56904,28680,28224,52295,2504,398,626,228,854,8820,3290,22301,41390,63.6,,,77.42,0.7,Amicalola EMC;Calhoun (City);Georgia Power Company,83.06
+Grady,13131,GA,Cairo,24808,12776,12032,16646,7244,323,174,74,372,2679,1690,10660,35518,59.3,,,,0.64,Cairo (City);Georgia Power Company;Grady EMC;Mitchell EMC;Whigham (City),89.39
+Greene,13133,GA,Greensboro,17003,8757,8246,10576,5951,102,153,17,204,1071,1345,9379,44299,72.7,,,137.92,0.87,Georgia Power Company;Rayle EMC;Walton EMC,83.75
+Gwinnett,13135,GA,Lawrenceville,907135,463546,443589,349247,255812,7257,107949,907,24493,188684,37483,278996,61865,66.1,,,96.83,0.75,Buford (City);Georgia Power Company;Jackson EMC;Lawrenceville (City);Norcross (City);Sawnee EMC;Walton EMC,83.51
+Habersham,13137,GA,Clarkesville,44246,23229,21017,34556,1637,442,1106,133,708,6371,2977,14856,41600,74.3,,,87.67,0.75,Georgia Power Company;Habersham EMC,82.42
+Hall,13139,GA,Gainesville,196637,98908,97729,120538,15928,1573,3933,393,3146,55058,10394,62327,51902,65.8,,,107.42,0.85,Buford (City);Georgia Power Company;Habersham EMC;Jackson EMC;Sawnee EMC,79.09
+Hancock,13141,GA,Sparta,8640,3897,4743,2091,6204,43,86,0,69,190,489,2813,26386,76.9,,,,,Georgia Power Company;Rayle EMC;Washington EMC,84.12
+Haralson,13143,GA,Buchanan,29042,14928,14114,26486,1394,87,203,0,436,494,1855,10886,42281,69.7,,,69.17,0.67,Carroll EMC;Georgia Power Company,83.79
+Harris,13145,GA,Hamilton,33652,16860,16792,26013,5687,135,337,34,572,1111,3490,11699,65336,83.6,,,95.17,0.66,Diverse Power;Flint Energies;Georgia Power Company,84.24
+Hart,13147,GA,Hartwell,25553,12904,12649,19165,4855,51,256,0,383,945,1696,10016,37983,72.5,,,76.58,0.69,Georgia Power Company;Hart EMC,83.67
+Heard,13149,GA,Franklin,11487,5778,5709,9741,1160,57,69,0,218,310,886,4364,44185,70.9,,,,0.66,Carroll EMC;Coweta-Fayette EMC;Diverse Power;Georgia Power Company,84.31
+Henry,13151,GA,McDonough,221768,116206,105562,100683,96691,665,7540,222,5322,14637,17501,71000,62561,72.6,,,81.17,0.68,Central Georgia EMC;Georgia Power Company;Snapping Shoals EMC,83.6
+Houston,13153,GA,Perry,152122,78191,73931,87014,47158,761,4412,304,4412,10040,17646,54188,55480,65.1,,,74.5,0.64,Flint Energies;Georgia Power Company;Middle Georgia EMC,50.42
+Irwin,13155,GA,Ocilla,9422,4570,4852,6350,2591,19,85,0,104,349,546,3279,29846,72.7,,,,,Georgia Power Company;Irwin EMC,88.48
+Jackson,13157,GA,Jefferson,64615,32695,31920,53114,4652,258,1228,65,1098,4717,4233,21115,54246,75.8,,,95.17,0.71,Commerce (City);Georgia Power Company;Jackson EMC,84.28
+Jasper,13159,GA,Monticello,13654,6977,6677,10131,2758,68,41,0,218,533,810,5154,41434,73,,,74.92,0.72,Central Georgia EMC;Georgia Power Company;Monticello (City);Snapping Shoals EMC;Tri-County EMC,83.93
+Jeff Davis,13161,GA,Hazlehurst,14877,7572,7305,10652,2276,119,104,15,164,1770,633,5216,36566,73.8,,,,,Georgia Power Company;Satilla REMC,86.48
+Jefferson,13163,GA,Louisville,15916,8197,7719,6685,8451,32,127,16,143,589,954,5855,28417,64.7,,,,0.64,Georgia Power Company;Jefferson Energy;Washington EMC,86.28
+Jenkins,13165,GA,Millen,8849,4132,4717,4531,3805,44,53,18,88,487,613,3554,27398,68.3,,,,,Excelsior EMC;Georgia Power Company;Jefferson Energy;Planters EMC,86.5
+Johnson,13167,GA,Wrightsville,9505,4135,5370,5922,3279,29,29,0,86,228,508,3168,32685,70.8,,,,,Altamaha EMC;Georgia Power Company;Jefferson Energy;Planterse EMC,86.13
+Jones,13169,GA,Gray,28623,14769,13854,20494,7156,86,172,0,343,429,2143,10367,54020,81.8,,,65.5,0.61,Central Georgia EMC;Georgia Power Company;Tri-County EMC,84.23
+Lamar,13171,GA,Barnesville,18469,9585,8884,12023,5615,55,111,0,314,462,1512,6287,40364,71,,,66.83,0.65,Central Georgia EMC;Georgia Power Company;Southern Rivers Energy,83.82
+Lanier,13173,GA,Lakeland,10399,5127,5272,7144,2257,104,135,0,291,593,1068,3733,31682,63.5,,,,0.65,Barnesville (City): Georgia Power Company;Slash Pine EMC,87.76
+Laurens,13175,GA,Dublin,47516,25041,22475,27892,17343,143,523,0,570,1283,3427,17622,33632,62.3,,,55,0.59,Altamaha EMC;Georgia Power Company;Little Ocmulgee EMC;Ocmulgee EMC;Oconee EMC;Washington EMC,86.5
+Lee,13177,GA,Leesburg,29337,14610,14727,21269,6073,117,733,29,381,880,2350,10126,62797,74.3,,,82.17,0.67,Georgia Power Company;Mitchell EMC;Sumter EMC,91.75
+Liberty,13179,GA,Hinesville,62570,30472,32098,24965,27030,438,1314,375,2878,7696,9655,22780,42484,45.5,,,78.92,0.68,Canoochee EMC;Coastal Electric Cooperative;Georgia Power Company,62.49
+Lincoln,13181,GA,Lincolnton,7828,4016,3812,5120,2411,39,39,0,117,117,638,3457,34720,73.7,,,,0.69,Georgia Power Company;Rayle EMC,83.3
+Long,13183,GA,Ludowici,18437,9255,9182,10712,4867,147,184,92,737,2194,1801,5173,50848,66.1,,,78.67,0.69,Canoochee EMC;Coastal Electric Cooperative;Georgia Power Company,87.42
+Lowndes,13185,GA,Valdosta,114628,58690,55938,62128,42298,573,2178,229,2407,6419,9380,39809,38915,51.2,,,70.5,0.6,Colquitt EMC;Georgia Power Company;Slash Pine EMC,87.23
+Lumpkin,13187,GA,Dahlonega,31445,15817,15628,28552,535,220,220,31,566,1446,2220,11255,40634,64.2,,,104.75,0.75,Amicalola EMC;Georgia Power Company;Habersham EMC;Jackson EMC;Sawnee EMC,81.63
+Macon,13193,GA,Oglethorpe,13450,6079,7371,4533,8057,67,229,13,121,551,803,4546,28285,62.1,,,,0.59,Flint Energies;Georgia Power Company;Middle Georgia EMC,86.72
+Madison,13195,GA,Danielsville,28824,14614,14210,23809,2652,86,490,0,432,1499,1824,10348,45063,73.1,,,75.17,0.67,Georgia Power Company;Hart EMC;Jackson EMC;Rayle EMC,84.27
+Marion,13197,GA,Buena Vista,8524,4279,4245,5038,2651,94,85,77,145,631,1033,3021,35484,73,,,,,Flint Energies;Georgia Power Company;Sumter EMC,86.07
+McDuffie,13189,GA,Thomson,21490,11454,10036,11583,8854,86,107,21,344,623,1554,8067,37021,61.6,,,,,Georgia Power Company;Jefferson Energy,83.3
+McIntosh,13191,GA,Darien,13927,7103,6824,8607,4749,84,56,14,209,292,1480,5207,45248,79,,,,0.76,Coastal Electric Cooperative;Georgia Power Company,72.69
+Meriwether,13199,GA,Greenville,21074,10958,10116,11928,8261,105,148,21,295,443,1151,7982,34989,66.7,,,53.67,0.66,Coweta-Fayette EMC;Diverse Power;Georgia Power Company;Southern Rivers Energy;Upson EMC,84.89
+Miller,13201,GA,Colquitt,5926,3087,2839,4089,1588,24,36,6,77,160,318,2251,36463,68.3,,,,,Georgia Power Company;Mitchell EMC;Three Notch EMC,89.55
+Mitchell,13205,GA,Camilla,22459,10780,11679,10443,10758,135,135,22,225,966,1540,8041,31111,66.2,,,,0.59,Camilla (City);Georgia Power Company;Grady EMC;Mitchell EMC,88.52
+Monroe,13207,GA,Forsyth,27306,13735,13571,19770,6280,82,273,0,355,628,2009,9589,50625,75.3,,,89.75,0.66,Central Georgia EMC;Flint Energies;Forsyth (City);Georgia Power Company;Southern Rivers Energy,84.19
+Montgomery,13209,GA,Mount Vernon,9060,4394,4666,6025,2374,18,36,0,109,589,435,3149,38111,71.9,,,,0.64,Altamaha EMC;Georgia Power Company;Little Ocmulgee EMC,87.25
+Morgan,13211,GA,Madison,18170,9394,8776,13028,4161,145,145,0,273,600,1260,6648,54506,74.8,,,102.58,0.78,Central Georgia EMC;Georgia Power Company;Rayle EMC;Snapping Shoals EMC;Tri-County EMC;Walton EMC,84.7
+Murray,13213,GA,Chatsworth,39315,19854,19461,32631,472,393,197,118,511,5740,1943,14266,38136,65.7,,,77.33,0.74,Amicalola EMC;Georgia Power Company;North Georgia EMC,80.18
+Muscogee,40101,GA,Columbus,69477,35572,33905,39324,7642,13270,486,69,5906,4169,5703,26168,41117,66.8,,,59,0.59,Diverse Power;Flint Energies;Georgia Power Company,82.54
+Newton,13217,GA,Covington,106999,56281,50718,50932,48043,428,1177,107,2140,5671,7691,35090,51068,68.2,,,77.08,0.69,Central Georgia EMC;Covington (City);Georgia Power Company;Mansfield (City);Oxford (City);Snapping Shoals EMC;Walton EMC,86.78
+Oconee,13219,GA,Watkinsville,36838,18751,18087,31239,1952,111,1474,0,516,1805,2148,12288,75946,81.3,,,116.33,0.82,Georgia Power Company;Rayle EMC;Walton EMC,84.23
+Oglethorpe,13221,GA,Lexington,14921,7565,7356,11310,2522,45,194,0,269,642,1050,5723,44403,74.5,,,81.25,0.68,Georgia Power Company;Rayle EMC,83.97
+Paulding,13223,GA,Dallas,155825,79782,76043,112506,29918,623,1714,156,3428,9505,9880,50017,60971,78.5,,,,0.78,Carroll EMC;Cobb EMC;Georgia Power Company;GreyStone Power,82.32
+Peach,13225,GA,Fort Valley,26655,13887,12768,12235,11835,133,320,27,480,1919,2177,9966,41128,66.2,,,66.5,0.6,Flint Energies;Fort Valley (City);Georgia Power Company,85.92
+Pickens,13227,GA,Jasper,30832,15601,15231,28797,401,154,247,0,401,956,2896,11377,56769,76.6,,,109.83,0.85,Amicalola EMC;Georgia Power Company,81.4
+Pierce,13229,GA,Blackshear,19171,9662,9509,16046,1687,153,153,19,268,997,1263,6947,42730,76.2,,,,,Georgia Power Company;Satilla REMC,87.64
+Pike,13231,GA,Zebulon,17941,9132,8809,15591,1704,54,72,0,269,287,1180,6026,50819,83.9,,,85.67,0.67,Central Georgia EMC;Georgia Power Company;Southern Rivers Energy;Upson EMC,85.2
+Polk,13233,GA,Cedartown,41776,21180,20596,30079,5431,334,376,84,710,5431,2882,14868,39356,67.2,,,58.42,0.69,Carroll EMC;Georgia Power Company;Tri-State EMC,82.53
+Pulaski,13235,GA,Hawkinsville,11251,6357,4894,7009,3623,56,113,11,135,394,825,3829,38880,58.1,,,,0.6,Georgia Power Company;Middle Georgia EMC;Ocmulgee EMC,86.13
+Putnam,13237,GA,Eatonton,21477,11039,10438,14003,5777,107,129,64,236,1417,1782,8322,45762,74.1,,,98.17,0.75,Central Georgia EMC;Georgia Power Company;Tri-County EMC,83.7
+Quitman,13239,GA,Georgetown,2335,1203,1132,1146,1114,16,7,0,28,42,227,916,29773,74,,,,0.66,Diverse Power-Pataula District Georgia Power Company;Sumter EMC,84.4
+Rabun,13241,GA,Clayton,16559,8412,8147,14522,265,99,166,17,298,1358,1262,6629,38277,72.7,,,,0.78,Georgia Power Company;Habersham EMC,80.8
+Randolph,13243,GA,Cuthbert,7177,3868,3309,2526,4407,7,43,7,57,187,403,2819,30358,57.6,,,,,Diverse Power-Patalua District;Georgia Power Company;Sumter EMC,85.92
+Richmond,13245,GA,Augusta,201647,104050,97597,70980,113931,807,3630,403,5243,9881,20497,72470,38595,52.6,,,,0.61,Georgia Power Company;Jefferson Energy;Planters EMC,79.75
+Rockdale,13247,GA,Conyers,89355,47090,42265,29755,48252,536,1698,89,1966,9204,6211,29940,51072,67.8,,,73.58,0.66,Georgia Power Company;Snapping Shoals EMC;Walton EMC,84.12
+Schley,13249,GA,Ellaville,5098,2651,2447,3686,1076,5,36,0,56,265,324,1895,41227,66.5,,,,,Ellaville (City);Flint Energies;Georgia Power Company;Sumter EMC,85.44
+Screven,13251,GA,Sylvania,14044,7134,6910,7710,5842,56,84,0,183,295,1039,5214,35047,69.3,,,,0.59,Georgia Power Company;Planters EMC,87.83
+Seminole,13253,GA,Donalsonville,8468,4412,4056,5165,2896,25,59,0,110,263,615,3312,35410,74.4,,,,0.65,Georgia Power Company;Three Notch EMC,89.52
+Spalding,13255,GA,Griffin,64806,33440,31366,38430,21840,324,648,65,1102,2981,4353,22914,40548,61,,,64.25,0.63,Central Georgia EMC;Coweta-Fayette EMC;Georgia Power Company;Griffin (City);Southern Rivers Energy,85.85
+Stephens,13257,GA,Toccoa,25751,13391,12360,21270,2858,103,232,26,592,824,1875,9189,37088,71.4,,,62.08,0.68,Georgia Power Company;Habersham EMC;Hart EMC,83.5
+Stewart,13259,GA,Lumpkin,5705,2139,3566,1460,2898,34,114,0,126,1586,321,1775,20882,62.5,,,,0.72,Georgia Power Company;Sumter EMC,85.59
+Sumter,13261,GA,Americus,30389,15954,14435,12034,16137,182,425,61,334,1641,1867,11698,33534,55.8,,,46.75,,Flint Energies;Georgia Power Company;Sumter EMC,87.68
+Talbot,13263,GA,Talbotton,6171,3258,2913,2493,3450,31,19,0,80,160,510,2729,36957,81.7,,,,0.68,Flint Energies;Georgia Power Company;Upson EMC,84.9
+Taliaferro,13265,GA,Crawfordville,1593,801,792,596,902,5,16,0,29,68,131,748,28152,69,,,,0.67,Georgia Power Company;Rayle EMC,83.8
+Tattnall,13267,GA,Reidsville,25092,10664,14428,14654,7402,176,151,50,276,2785,1892,7899,35578,66.9,,,,0.61,Altamaha EMC;Canoochee EMC;Excelsior EMC;Georgia Power Company;Satilla REMC,87.95
+Taylor,13269,GA,Butler,8232,4281,3951,4733,3194,16,66,0,82,206,478,3368,27114,68.8,,,,,Flint Energies;Georgia Power Company;Upson EMC,85.98
+Telfair,13271,GA,McRae,15965,6625,9340,7855,5987,64,112,16,192,2283,1158,5110,27657,61.5,,,,,Georgia Power Company;Little Ocmulgee EMC;Ocmulgee EMC,84.69
+Terrell,13273,GA,Dawson,8967,4708,4259,3201,5389,45,36,18,126,251,377,3312,30438,59.1,,,,0.67,Georgia Power Company;Sumter EMC,88
+Thomas,13275,GA,Thomasville,45248,23800,21448,26018,16606,271,452,45,633,1674,3333,17269,38241,60.6,,,,,Georgia Power Company;Grady EMC;Mitchell EMC;Thomasville (City),87.17
+Tift,13277,GA,Tifton,40828,21067,19761,22986,12248,204,653,41,531,4818,1816,14451,37613,57.6,,,67.92,0.62,Colquitt EMC;Georgia Power Company;Irwin EMC;Mitchell EMC,87.92
+Toombs,13279,GA,Lyons,27196,14305,12891,16508,7071,218,245,54,408,3128,1433,10376,33081,61.1,,,,0.59,Altamaha EMC;Canoochee EMC;Georgia Power Company,87.65
+Towns,13281,GA,Hiawassee,11391,5969,5422,10764,125,46,91,0,91,285,1203,4611,39321,79.5,,,,0.79,Blue Ridge Mountain EMC;Georgia Power Company,82.8
+Treutlen,13283,GA,Soperton,6637,3285,3352,4241,2144,20,20,0,66,166,349,2586,40204,69.7,,,,,Altamaha EMC;Georgia Power Company,85.16
+Troup,13285,GA,LaGrange,70005,36333,33672,39903,25132,280,1400,140,1120,2520,4621,24619,42545,57.7,,,66.42,0.62,Carroll EMC;Coweta-Fayette EMC;Diverse Power;Georgia Power Company;Hogansville (City);LaGrange (City);West Point (City),84.24
+Turner,13287,GA,Ashburn,8030,4095,3935,4376,3164,40,64,16,96,369,479,3071,34667,69.7,,,,0.61,Georgia Power Company;Irwin EMC;Middle Georgia EMC;Mitchell EMC,87.21
+Twiggs,13289,GA,Jeffersonville,8171,4143,4028,4461,3415,33,25,0,123,188,501,2887,31625,79.9,,,,,Georgia Power Company;Oconee EMC;Tri-County EMC,85.29
+Union,13291,GA,Blairsville,22928,11808,11120,21552,183,115,160,0,275,711,2284,8873,41686,78.2,,,123.92,0.91,Blue Ridge Mountain EMC;Georgia Power Company,81.08
+Upson,13293,GA,Thomaston,26335,13773,12562,17750,7505,132,184,26,369,632,1911,10078,35699,66.9,,,46.83,0.62,Flint Energies;Georgia Power Company;Southern Rivers Energy;Thomaston (City);Upson EMC,84.89
+Walker,13295,GA,LaFayette,67896,34423,33473,61921,2987,204,407,68,1086,1426,4499,25581,41539,71.5,,,68,0.72,Georgia Power Company;LaFayette (City);North Georgia EMC,81.49
+Walton,13297,GA,Monroe,90184,46355,43829,68089,15782,361,1353,90,1443,3788,5591,30048,54459,72.5,,,96.42,0.68,Georgia Power Company;Monroe (City);Snapping Shoals EMC;Walton EMC,84.5
+Ware,13299,GA,Waycross,35738,18012,17726,22765,10650,179,357,36,643,1430,2318,13847,34705,61.4,,,46.42,0.57,Georgia Power Company;Okefenoke REMC;Satilla REMC;Slash Pine EMC,86.34
+Warren,13301,GA,Warrenton,5442,2857,2585,2063,3222,16,33,0,60,82,251,2204,31875,66.7,,,,,Georgia Power Company;Jefferson Energy;Washington EMC,84.27
+Washington,13303,GA,Sandersville,20457,10126,10331,8858,10883,41,143,0,205,471,1189,7381,37417,69.8,,,,,Georgia Power Company;Jefferson Energy;Sandersville (City);Washington EMC,84.87
+Wayne,13305,GA,Jesup,30104,14600,15504,21554,6021,181,181,30,602,1897,2324,10016,39908,65.4,,,61.75,0.63,Georgia Power Company;Okefenoke REMC;Satilla REMC,86.21
+Webster,13307,GA,Preston,2599,1310,1289,1354,1105,10,13,0,47,101,119,1025,37072,81.1,,,,0.64,Georgia Power Company;Sumter EMC,86.73
+Wheeler,13309,GA,Alamo,7978,2800,5178,4476,3040,8,24,0,96,423,481,2065,27779,66,,,,,Georgia Power Company;Little Ocmulgee EMC,86.5
+White,13311,GA,Cleveland,28884,14702,14182,26660,607,173,144,29,462,924,2322,11016,42264,72.4,,,101.25,0.77,Georgia Power Company;Habersham EMC,81.4
+Whitfield,13313,GA,Dalton,104589,52608,51981,61812,4497,1464,1778,209,1778,35979,4152,34814,41764,63.3,,,76.92,0.71,Georgia Power Company;North Georgia EMC,85.53
+Wilcox,13315,GA,Abbeville,8761,3557,5204,5160,3049,26,61,0,123,412,563,2698,34071,72.5,,,,,Georgia Power Company;Irwin EMC;Middle Georgia EMC,87.29
+Wilkes,13317,GA,Washington,9805,5089,4716,5030,4118,29,88,0,186,441,681,3975,33462,67.8,,,,0.68,Georgia Power Company;Rayle EMC;Washington (City),84.16
+Wilkinson,13319,GA,Irwinton,9104,4725,4379,5153,3532,46,55,0,127,237,483,3297,38827,76.2,,,,0.63,Georgia Power Company;Oconee EMC;Tri-County EMC;Washington EMC,83.52
+Worth,13321,GA,Sylvester,20748,10768,9980,14026,5872,83,124,21,249,477,1499,7873,38684,70.3,,,,0.63,Colquitt EMC;Georgia Power Company;Mitchell EMC;Sylvester (City),87.92

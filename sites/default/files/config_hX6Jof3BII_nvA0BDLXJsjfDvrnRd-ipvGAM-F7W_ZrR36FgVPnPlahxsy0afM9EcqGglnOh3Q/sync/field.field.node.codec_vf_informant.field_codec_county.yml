@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_codec_county
-    - node.type.codec_county
     - node.type.codec_vf_informant
 id: node.codec_vf_informant.field_codec_county
 field_name: field_codec_county
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    target_bundles:
-      codec_county: codec_county
+    target_bundles: {  }
     sort:
       field: _none
     auto_create: false
