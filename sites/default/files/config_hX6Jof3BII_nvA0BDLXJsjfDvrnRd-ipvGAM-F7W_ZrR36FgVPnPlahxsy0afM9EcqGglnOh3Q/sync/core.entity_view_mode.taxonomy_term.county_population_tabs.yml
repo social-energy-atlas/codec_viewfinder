@@ -1,0 +1,10 @@
+uuid: b082715b-e8b3-4a2c-b71b-723f8516cab9
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.county_population_tabs
+label: 'County Population Tabs'
+targetEntityType: taxonomy_term
+cache: true
