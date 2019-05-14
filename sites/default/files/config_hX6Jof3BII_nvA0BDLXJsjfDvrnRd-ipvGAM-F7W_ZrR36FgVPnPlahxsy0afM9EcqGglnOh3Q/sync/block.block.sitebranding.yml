@@ -1,0 +1,23 @@
+uuid: fe510133-9c4c-470f-a882-ca93669fcc0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - enterpriseplus
+id: sitebranding
+theme: enterpriseplus
+region: slideout
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

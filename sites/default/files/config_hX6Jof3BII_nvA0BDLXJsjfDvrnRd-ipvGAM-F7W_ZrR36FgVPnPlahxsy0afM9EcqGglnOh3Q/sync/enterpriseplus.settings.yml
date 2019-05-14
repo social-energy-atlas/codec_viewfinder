@@ -1,11 +1,11 @@
 breadcrumb_separator: fa-angle-right
-scroll_to_top_display: true
+scroll_to_top_display: 1
 scroll_to_top_text: Top
 color_scheme: blue
-animations_state: true
+animations_state: 1
 slideout_background_color: 'region--light-typography region--dark-background'
 slideout_side: left
-slideout_touch_swipe: true
+slideout_touch_swipe: 1
 header_top_highlighted_layout_container: container
 header_top_highlighted_background_color: 'region--light-typography region--dark-background'
 header_top_highlighted_animation_effect: fadeIn
@@ -13,7 +13,7 @@ header_top_layout_container: container
 header_top_background_color: 'region--dark-typography region--white-background'
 header_top_animation_effect: fadeIn
 header_layout_container: container
-fixed_header: true
+fixed_header: 1
 content_top_layout_container: container
 content_top_background_color: 'region--dark-typography region--white-background'
 content_top_animation_effect: fadeIn
@@ -26,7 +26,7 @@ media_background_separator: region--no-separator
 media_background_background_color: 'region--light-typography region--dark-background'
 media_background_animation_effect: no-animation
 main_content_separator: region--no-separator
-main_content_animation_effect: fadeIn
+main_content_animation_effect: no-animation
 sidebar_first_animation_effect: fadeInLeft
 sidebar_second_animation_effect: fadeInRight
 content_bottom_layout_container: container-fluid
@@ -71,8 +71,8 @@ footer_bottom_background_color: 'region--light-typography region--dark-backgroun
 subfooter_layout_container: container
 subfooter_separator: region--no-separator
 subfooter_background_color: 'region--dark-typography region--gray-background'
-reading_time: true
-post_progress: true
+reading_time: 1
+post_progress: 1
 layout_mode: wide
 headings_font_family: hff-43
 paragraph_font_family: pff-43
@@ -82,36 +82,36 @@ rs_slideshow_fullscreen_effect: random
 rs_slideshow_fullscreen_effect_time: '10'
 rs_slideshow_fullscreen_navigation_style: titles_carousel
 rs_slideshow_fullscreen_bullets_position: right
-rs_slideshow_fullscreen_touch_swipe: true
-transparent_header_state: true
+rs_slideshow_fullscreen_touch_swipe: 1
+transparent_header_state: 1
 transparent_header_opacity: '90'
 rs_slideshow_fullwidth_effect: random
 rs_slideshow_fullwidth_effect_time: '10'
 rs_slideshow_fullwidth_initial_height: '650'
 rs_slideshow_fullwidth_navigation_style: titles_carousel
 rs_slideshow_fullwidth_bullets_position: center
-rs_slideshow_fullwidth_touch_swipe: true
+rs_slideshow_fullwidth_touch_swipe: 1
 rs_slideshow_boxedwidth_effect: random
 rs_slideshow_boxedwidth_effect_time: '10'
 rs_slideshow_boxedwidth_initial_height: '650'
 rs_slideshow_boxedwidth_navigation_style: titles_carousel
 rs_slideshow_boxedwidth_bullets_position: center
-rs_slideshow_boxedwidth_touch_swipe: true
+rs_slideshow_boxedwidth_touch_swipe: 1
 rs_slideshow_internal_effect: random
 rs_slideshow_internal_effect_time: '10'
 rs_slideshow_internal_initial_height: '650'
 rs_slideshow_internal_navigation_style: bullets
 rs_slideshow_internal_banner_bullets_position: center
-rs_slideshow_internal_touch_swipe: true
+rs_slideshow_internal_touch_swipe: 1
 rs_slideshow_caption_opacity: '0'
 in_page_slider_effect: slide
-owl_products_autoplay: true
+owl_products_autoplay: 1
 owl_products_effect_time: '5'
-owl_related_nodes_autoplay: false
+owl_related_nodes_autoplay: 0
 owl_related_nodes_effect_time: '5'
-owl_brands_autoplay: false
+owl_brands_autoplay: 0
 owl_brands_effect_time: '5'
-owl_collections_autoplay: false
+owl_collections_autoplay: 0
 owl_collections_effect_time: '5'
 parallax_and_video_bg_state: none
 parallax_and_video_bg_opacity: '0'
@@ -120,3 +120,16 @@ isotope_filters_text: All
 google_maps_key: AIzaSyDyL-4KyWw_3hp-0jmZLGcJ3zMWkkJ44VI
 _core:
   default_config_hash: i9qL7i6kwITQVL7sQx8twcurf8Vf6WDWgckcBgtJFIU
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: true
+favicon:
+  use_default: true
+font_title: ''
+rs_slideshow_internal_bullets_position: left
+video_bg_state: none
+video_bg_opacity: ''

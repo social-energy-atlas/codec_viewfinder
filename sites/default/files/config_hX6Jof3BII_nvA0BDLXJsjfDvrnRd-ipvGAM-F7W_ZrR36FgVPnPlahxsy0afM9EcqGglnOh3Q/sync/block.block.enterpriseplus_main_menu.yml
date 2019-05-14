@@ -12,7 +12,7 @@ _core:
   default_config_hash: tOqCTln7zoZR_RN8yczVJTCC86ZW6RXsEEMHkC1yuz0
 id: enterpriseplus_main_menu
 theme: enterpriseplus
-region: navigation
+region: footer
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'

@@ -1,0 +1,22 @@
+uuid: 0369d5be-da54-43d5-b7f4-71507aa09355
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: informant_url
+label: 'Informant URL'
+type: 'canonical_entities:node'
+pattern: '/solarview/georgia/[node:title]'
+selection_criteria:
+  583e47e2-05fa-497a-afcd-f08004c21442:
+    id: node_type
+    bundles:
+      codec_vf_informant: codec_vf_informant
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 583e47e2-05fa-497a-afcd-f08004c21442
+selection_logic: and
+weight: -5
+relationships: {  }

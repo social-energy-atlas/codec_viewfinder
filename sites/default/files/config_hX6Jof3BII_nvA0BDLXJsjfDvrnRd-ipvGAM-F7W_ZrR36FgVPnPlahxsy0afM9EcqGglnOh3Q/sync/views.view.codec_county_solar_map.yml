@@ -797,7 +797,7 @@ display:
           data_source: field_codec_poly_map
           name_field: name
           description_field: nid
-          view_mode: map_pin
+          view_mode: county_population_tabs
           leaflet_map: 'OSM Mapnik'
           height: '600'
           hide_empty_map: 0
@@ -835,7 +835,7 @@ display:
           leaflet_markercluster:
             control: 0
             options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
-          path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+          path: '{"color":"#004E60","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
       defaults:
         style: false
         row: false

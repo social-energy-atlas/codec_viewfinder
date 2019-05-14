@@ -1,0 +1,23 @@
+uuid: f6a1e053-b505-477e-b9bc-35d5e4ea4339
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: city_url
+label: 'City URL'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/georgia/term:field_codec_ga_county]/[term:name]'
+selection_criteria:
+  fb10d727-68eb-43ed-9c73-f38123e4570c:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      codec_ga_cities: codec_ga_cities
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: fb10d727-68eb-43ed-9c73-f38123e4570c
+selection_logic: and
+weight: -5
+relationships: {  }

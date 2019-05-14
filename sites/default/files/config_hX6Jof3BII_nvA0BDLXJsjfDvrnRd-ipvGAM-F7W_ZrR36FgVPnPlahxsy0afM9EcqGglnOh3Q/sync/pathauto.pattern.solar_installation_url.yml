@@ -1,0 +1,22 @@
+uuid: 04ebdb61-e7cb-424c-bc4b-26089ec8d0f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: solar_installation_url
+label: 'Solar Installation URL'
+type: 'canonical_entities:node'
+pattern: '/solar/georgia/installation/[node:title]'
+selection_criteria:
+  430fcd4e-73f3-4478-a58b-2aa5e971da65:
+    id: node_type
+    bundles:
+      codec_solar_installation: codec_solar_installation
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 430fcd4e-73f3-4478-a58b-2aa5e971da65
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,25 @@
+uuid: 0e113214-d0fe-4cb4-a531-8d3780edba83
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c4552477-7ddb-4afb-a207-065e51608b26'
+  module:
+    - block_content
+  theme:
+    - enterpriseplus
+id: connectwithus
+theme: enterpriseplus
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:c4552477-7ddb-4afb-a207-065e51608b26'
+settings:
+  id: 'block_content:c4552477-7ddb-4afb-a207-065e51608b26'
+  label: 'Connect with Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

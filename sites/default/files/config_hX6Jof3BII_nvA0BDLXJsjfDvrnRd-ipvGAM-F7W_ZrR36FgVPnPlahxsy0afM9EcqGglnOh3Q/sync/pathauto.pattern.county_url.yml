@@ -1,0 +1,23 @@
+uuid: f3d2c52e-5956-4521-b23a-7f112ae2b081
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: county_url
+label: 'County URL'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/georgia/[term:name]'
+selection_criteria:
+  44ef1f91-30b3-456f-a435-e07b0bbaf4e2:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      codec_georgia_counties: codec_georgia_counties
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 44ef1f91-30b3-456f-a435-e07b0bbaf4e2
+selection_logic: and
+weight: -5
+relationships: {  }

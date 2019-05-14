@@ -1,0 +1,22 @@
+uuid: 6675989e-cb9b-46aa-9c68-d9d29781cf9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: research_url
+label: 'Research URL'
+type: 'canonical_entities:node'
+pattern: '/research/[node:title]'
+selection_criteria:
+  bf87ada3-cb39-4319-b7d8-655e2019c817:
+    id: node_type
+    bundles:
+      mt_showcase: mt_showcase
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bf87ada3-cb39-4319-b7d8-655e2019c817
+selection_logic: and
+weight: -5
+relationships: {  }
