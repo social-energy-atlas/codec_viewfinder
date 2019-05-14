@@ -1,0 +1,23 @@
+uuid: 3508e878-34f4-4ab8-a121-bc1af1a6aa8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_dsire_url
+    - node.type.codec_city
+  module:
+    - link
+id: node.codec_city.field_codec_dsire_url
+field_name: field_codec_dsire_url
+entity_type: node
+bundle: codec_city
+label: 'DSIRE Search URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

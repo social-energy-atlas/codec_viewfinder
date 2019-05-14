@@ -1,0 +1,20 @@
+uuid: 513c34f5-34ee-4182-82ec-68032b80ba0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_codec_avg_pct_suit_roof
+field_name: field_codec_avg_pct_suit_roof
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

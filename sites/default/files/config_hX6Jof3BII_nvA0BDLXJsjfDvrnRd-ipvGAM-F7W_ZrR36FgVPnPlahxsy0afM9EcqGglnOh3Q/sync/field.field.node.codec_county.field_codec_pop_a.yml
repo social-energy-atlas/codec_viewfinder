@@ -1,0 +1,23 @@
+uuid: 598f40c6-3ff6-433f-9bb5-27fabacd8b19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_a
+    - node.type.codec_county
+id: node.codec_county.field_codec_pop_a
+field_name: field_codec_pop_a
+entity_type: node
+bundle: codec_county
+label: Asian
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

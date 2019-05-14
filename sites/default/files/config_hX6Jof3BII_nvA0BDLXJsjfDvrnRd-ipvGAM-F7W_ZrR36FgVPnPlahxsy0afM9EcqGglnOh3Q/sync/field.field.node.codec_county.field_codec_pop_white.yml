@@ -1,0 +1,23 @@
+uuid: ec087d84-9d78-4e08-9199-2c3c6b00e289
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_white
+    - node.type.codec_county
+id: node.codec_county.field_codec_pop_white
+field_name: field_codec_pop_white
+entity_type: node
+bundle: codec_county
+label: White
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

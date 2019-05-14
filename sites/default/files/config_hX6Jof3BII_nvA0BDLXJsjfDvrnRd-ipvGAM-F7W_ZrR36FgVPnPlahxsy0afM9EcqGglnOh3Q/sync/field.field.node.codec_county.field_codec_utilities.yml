@@ -1,0 +1,29 @@
+uuid: 49362cef-38a4-4f3e-9f0d-82054184b11d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_utilities
+    - node.type.codec_county
+    - taxonomy.vocabulary.codec_utilities
+id: node.codec_county.field_codec_utilities
+field_name: field_codec_utilities
+entity_type: node
+bundle: codec_county
+label: Utilities
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      codec_utilities: codec_utilities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,8 +1,0 @@
-uuid: 007f53e4-0862-4127-81a8-8fb0a98755e9
-langcode: en
-status: true
-dependencies: {  }
-id: mt_background_image_block
-label: 'Background Image Block'
-revision: 0
-description: 'Use this custom block type to create blocks with background images.'

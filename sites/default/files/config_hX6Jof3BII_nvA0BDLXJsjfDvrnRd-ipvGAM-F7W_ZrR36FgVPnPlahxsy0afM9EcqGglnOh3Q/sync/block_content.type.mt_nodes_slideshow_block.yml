@@ -1,8 +1,0 @@
-uuid: ae14fc9a-afc8-41fd-af82-9eb56d7fccd7
-langcode: en
-status: true
-dependencies: {  }
-id: mt_nodes_slideshow_block
-label: 'Nodes Slideshow block'
-revision: 0
-description: 'Use this custom block type to display nodes in a slideshow.'

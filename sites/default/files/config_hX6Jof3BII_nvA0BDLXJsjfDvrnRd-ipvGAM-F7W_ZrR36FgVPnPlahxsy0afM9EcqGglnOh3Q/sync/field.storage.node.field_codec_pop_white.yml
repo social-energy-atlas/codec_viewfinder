@@ -1,0 +1,20 @@
+uuid: ef52c16a-6a17-4b75-9c38-52e82a1452b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_codec_pop_white
+field_name: field_codec_pop_white
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

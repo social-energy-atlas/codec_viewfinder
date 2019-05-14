@@ -1,0 +1,23 @@
+uuid: 5a37d27e-e0b0-4ceb-b49b-5141b0cb9eb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.codec_county
+  module:
+    - feeds
+id: node.codec_county.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: codec_county
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

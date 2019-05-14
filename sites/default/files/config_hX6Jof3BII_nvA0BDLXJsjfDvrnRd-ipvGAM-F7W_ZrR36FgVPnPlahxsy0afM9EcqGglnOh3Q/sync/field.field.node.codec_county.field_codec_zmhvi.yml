@@ -1,0 +1,23 @@
+uuid: 01ed2414-8cd1-42d1-997c-102f6ea46c60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_zmhvi
+    - node.type.codec_county
+id: node.codec_county.field_codec_zmhvi
+field_name: field_codec_zmhvi
+entity_type: node
+bundle: codec_county
+label: 'Zillow Median Home Value Index'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

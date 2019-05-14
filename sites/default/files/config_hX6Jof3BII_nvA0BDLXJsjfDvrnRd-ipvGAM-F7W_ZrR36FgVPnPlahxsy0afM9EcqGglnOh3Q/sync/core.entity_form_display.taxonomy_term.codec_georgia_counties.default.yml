@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.codec_georgia_counties.feeds_item
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_avg_pct_suit_roof
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_county_seat
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_dsire_url

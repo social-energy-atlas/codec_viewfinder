@@ -1,0 +1,23 @@
+uuid: adc9749d-b0fa-4444-9821-5af96ce89872
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codec_pop_male
+    - node.type.codec_county
+id: node.codec_county.field_codec_pop_male
+field_name: field_codec_pop_male
+entity_type: node
+bundle: codec_county
+label: Male
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

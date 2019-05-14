@@ -1,0 +1,56 @@
+uuid: 5344c710-2fbb-49e1-be08-cce3a6a01a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.codec_county.body
+    - node.type.codec_county
+  module:
+    - text
+    - user
+id: node.codec_county.teaser
+targetEntityType: node
+bundle: codec_county
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  feeds_item: true
+  field_codec_avg_pct_suit_roof: true
+  field_codec_county_seat: true
+  field_codec_dsire_url: true
+  field_codec_fips: true
+  field_codec_households: true
+  field_codec_municode_url: true
+  field_codec_poly_map: true
+  field_codec_pop_a: true
+  field_codec_pop_aian: true
+  field_codec_pop_baa: true
+  field_codec_pop_female: true
+  field_codec_pop_hl: true
+  field_codec_pop_male: true
+  field_codec_pop_median_income: true
+  field_codec_pop_nhpi: true
+  field_codec_pop_owner_occ: true
+  field_codec_pop_total: true
+  field_codec_pop_two: true
+  field_codec_pop_veterans: true
+  field_codec_pop_white: true
+  field_codec_sampling_plan: true
+  field_codec_utilities: true
+  field_codec_zmhri: true
+  field_codec_zmhvi: true

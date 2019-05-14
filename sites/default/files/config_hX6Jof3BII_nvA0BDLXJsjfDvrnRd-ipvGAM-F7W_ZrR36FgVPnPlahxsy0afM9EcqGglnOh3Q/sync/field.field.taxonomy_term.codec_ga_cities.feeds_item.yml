@@ -1,0 +1,23 @@
+uuid: 44820bfb-4a7b-4ac9-a59e-a68e47e6720a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.codec_ga_cities
+  module:
+    - feeds
+id: taxonomy_term.codec_ga_cities.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: codec_ga_cities
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item
