@@ -1,8 +1,10 @@
-uuid: 0ca7b7d1-5054-40b7-929e-09acfa70ecc5
+uuid: 6d481405-ea2a-4af0-9e96-9bb833f4ee33
 langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
+    - core.entity_view_mode.node.full
     - field.field.node.codec_vf_informant.body
     - field.field.node.codec_vf_informant.feeds_item
     - field.field.node.codec_vf_informant.field_codec_birth_year
@@ -26,14 +28,20 @@ dependencies:
     - node.type.codec_vf_informant
   module:
     - file
+    - layout_builder
+    - layout_discovery
     - options
     - text
     - user
     - video_embed_field
-id: node.codec_vf_informant.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.codec_vf_informant.full
 targetEntityType: node
 bundle: codec_vf_informant
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -195,9 +203,9 @@ content:
     region: content
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   addtoany: true
   feeds_item: true
