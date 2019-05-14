@@ -1,0 +1,23 @@
+uuid: 6142d098-3566-4ea4-a431-39aecbb55550
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: utility_url
+label: 'Utility URL'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/georgia/utility/[term:name]'
+selection_criteria:
+  e9224a37-df2d-4af8-a617-f31375968b4e:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      codec_utilities: codec_utilities
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: e9224a37-df2d-4af8-a617-f31375968b4e
+selection_logic: and
+weight: -5
+relationships: {  }

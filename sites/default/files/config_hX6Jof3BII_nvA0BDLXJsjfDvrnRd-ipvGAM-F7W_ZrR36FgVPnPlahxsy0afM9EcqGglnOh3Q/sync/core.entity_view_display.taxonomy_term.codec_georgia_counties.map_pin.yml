@@ -1,0 +1,307 @@
+uuid: 865d51c2-8f84-46a8-b2d8-dcb107c5ecb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.map_pin
+    - field.field.taxonomy_term.codec_georgia_counties.feeds_item
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_avg_pct_suit_roof
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_county_seat
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_dsire_url
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_fips
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_hh
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_poly_map
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_a
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_aian
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_baa
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_female
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_hl
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_male
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_median_income
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_nhpi
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_owner_occ
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_total
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_two
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_veterans
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_white
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_sampling_plan
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_utilities
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhri
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhvi
+    - taxonomy.vocabulary.codec_georgia_counties
+  module:
+    - layout_builder
+    - leaflet
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.codec_georgia_counties.map_pin
+targetEntityType: taxonomy_term
+bundle: codec_georgia_counties
+mode: map_pin
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_codec_avg_pct_suit_roof:
+    weight: 18
+    label: inline
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_codec_county_seat:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codec_dsire_url:
+    weight: 21
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_codec_fips:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_hh:
+    weight: 16
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_poly_map:
+    weight: 2
+    label: hidden
+    settings:
+      multiple_map: 0
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      hide_empty_map: 0
+      disable_wheel: 0
+      fullscreen_control: 1
+      reset_map:
+        control: 0
+        position: topright
+      popup: false
+      popup_content: ''
+      map_position:
+        force: 0
+        center:
+          lat: 0
+          lon: 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+      icon:
+        iconUrl: ''
+        iconSize:
+          x: null
+          'y': null
+        iconAnchor:
+          x: null
+          'y': null
+        shadowUrl: ''
+        shadowSize:
+          x: null
+          'y': null
+        shadowAnchor:
+          x: null
+          'y': null
+        popupAnchor:
+          x: null
+          'y': null
+      leaflet_markercluster:
+        control: 0
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
+  field_codec_pop_a:
+    weight: 9
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_aian:
+    weight: 8
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_baa:
+    weight: 10
+    label: above
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_female:
+    weight: 6
+    label: above
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_hl:
+    weight: 11
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_male:
+    weight: 7
+    label: above
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_median_income:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_nhpi:
+    weight: 12
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_owner_occ:
+    weight: 17
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_codec_pop_total:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_two:
+    weight: 14
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_veterans:
+    weight: 15
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_white:
+    weight: 13
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_sampling_plan:
+    weight: 19
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_codec_utilities:
+    weight: 20
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codec_zmhri:
+    weight: 22
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_codec_zmhvi:
+    weight: 23
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden:
+  feeds_item: true

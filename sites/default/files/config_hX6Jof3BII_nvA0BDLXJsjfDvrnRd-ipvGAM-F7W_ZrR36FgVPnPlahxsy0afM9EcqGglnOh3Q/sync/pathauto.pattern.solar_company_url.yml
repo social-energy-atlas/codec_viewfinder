@@ -1,0 +1,23 @@
+uuid: 04b50617-ca6e-4d8a-bcfc-469542e0cd1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: solar_company_url
+label: 'Solar Company URL'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/solar/company/[term:name]'
+selection_criteria:
+  60861947-90f5-4856-9946-8ca33963d324:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      codec_solar_companies: codec_solar_companies
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 60861947-90f5-4856-9946-8ca33963d324
+selection_logic: and
+weight: -5
+relationships: {  }

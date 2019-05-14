@@ -1,0 +1,362 @@
+uuid: 576bee7d-1936-4a8e-bfa5-103aa54880c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.county_population_tabs
+    - field.field.taxonomy_term.codec_georgia_counties.feeds_item
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_avg_pct_suit_roof
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_county_seat
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_dsire_url
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_fips
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_hh
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_poly_map
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_a
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_aian
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_baa
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_female
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_hl
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_male
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_median_income
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_nhpi
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_owner_occ
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_total
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_two
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_veterans
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_pop_white
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_sampling_plan
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_utilities
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhri
+    - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhvi
+    - taxonomy.vocabulary.codec_georgia_counties
+  module:
+    - field_group
+    - layout_builder
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  field_group:
+    group_census_data:
+      children:
+        - group_community
+        - group_population
+        - group_income
+        - group_housing
+        - group_energ
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Census Data'
+    group_community:
+      children:
+        - field_codec_county_seat
+        - description
+      parent_name: group_census_data
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+      label: Community
+    group_population:
+      children:
+        - field_codec_pop_total
+        - field_codec_pop_veterans
+        - group_population_by_gender
+        - group_population_by_race
+      parent_name: group_census_data
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Population
+    group_population_by_gender:
+      children:
+        - field_codec_pop_female
+        - field_codec_pop_male
+      parent_name: group_population
+      weight: 5
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: 'Population by Gender'
+    group_population_by_race:
+      children:
+        - field_codec_pop_aian
+        - field_codec_pop_a
+        - field_codec_pop_baa
+        - field_codec_pop_hl
+        - field_codec_pop_nhpi
+        - field_codec_pop_white
+        - field_codec_pop_two
+      parent_name: group_population
+      weight: 6
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: 'Population by Race'
+    group_income:
+      children:
+        - field_codec_pop_median_income
+        - field_codec_hh
+      parent_name: group_census_data
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Income
+    group_housing:
+      children:
+        - field_codec_pop_owner_occ
+        - field_codec_zmhri
+        - field_codec_zmhvi
+      parent_name: group_census_data
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Housing
+    group_energ:
+      children:
+        - field_codec_avg_pct_suit_roof
+        - field_codec_utilities
+        - field_codec_dsire_url
+      parent_name: group_census_data
+      weight: 24
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Energy
+id: taxonomy_term.codec_georgia_counties.county_population_tabs
+targetEntityType: taxonomy_term
+bundle: codec_georgia_counties
+mode: county_population_tabs
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_codec_avg_pct_suit_roof:
+    weight: 16
+    label: inline
+    settings:
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_codec_county_seat:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codec_dsire_url:
+    weight: 18
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_codec_hh:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_a:
+    weight: 7
+    label: hidden
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_aian:
+    weight: 6
+    label: hidden
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_baa:
+    weight: 8
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_female:
+    weight: 4
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_hl:
+    weight: 9
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_male:
+    weight: 5
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_median_income:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_nhpi:
+    weight: 10
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_owner_occ:
+    weight: 15
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_codec_pop_total:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_two:
+    weight: 12
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_veterans:
+    weight: 4
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_pop_white:
+    weight: 11
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_codec_utilities:
+    weight: 17
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_codec_zmhri:
+    weight: 16
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_codec_zmhvi:
+    weight: 17
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden:
+  feeds_item: true
+  field_codec_fips: true
+  field_codec_poly_map: true
+  field_codec_sampling_plan: true

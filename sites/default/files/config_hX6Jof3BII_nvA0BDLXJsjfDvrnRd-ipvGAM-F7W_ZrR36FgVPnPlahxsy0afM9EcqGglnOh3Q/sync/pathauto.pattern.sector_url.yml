@@ -1,0 +1,23 @@
+uuid: 971f0b4b-b590-4061-90cb-9f2871e57742
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: sector_url
+label: 'Sector URL'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/solar/sector/[term:name]'
+selection_criteria:
+  2407dcbf-6b21-464a-a64c-bd85d9d2efd1:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      codec_sector: codec_sector
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 2407dcbf-6b21-464a-a64c-bd85d9d2efd1
+selection_logic: and
+weight: -5
+relationships: {  }

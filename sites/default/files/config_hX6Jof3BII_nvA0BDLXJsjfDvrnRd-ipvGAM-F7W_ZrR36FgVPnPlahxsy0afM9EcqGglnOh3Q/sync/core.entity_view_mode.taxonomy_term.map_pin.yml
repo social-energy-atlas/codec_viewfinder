@@ -1,0 +1,10 @@
+uuid: f5073d6d-c52c-4525-ba8a-0a7ec96f9d2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.map_pin
+label: 'Map Pin'
+targetEntityType: taxonomy_term
+cache: true
