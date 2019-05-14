@@ -1,12 +1,10 @@
-uuid: 4783ce5b-218b-4369-a5bd-aeb81528504b
+uuid: fd05e048-ad63-4877-b59d-39621e522ea4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.codec_ga_cities.field_codec_ga_county
-    - taxonomy.vocabulary.codec_ga_cities
+    - taxonomy.vocabulary.codec_solar_companies
     - views.view.codec_county_blocks
-    - views.view.codec_county_population_display
     - views.view.taxonomy_term
   module:
     - layout_builder
@@ -19,25 +17,17 @@ third_party_settings:
     enabled: true
     sections:
       -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 50-50
+        components: {  }
+        third_party_settings: {  }
+      -
         layout_id: layout_onecol
         layout_settings: {  }
         components:
-          b141cb35-f7f7-4a79-bb51-41a58d80a345:
-            uuid: b141cb35-f7f7-4a79-bb51-41a58d80a345
-            region: content
-            configuration:
-              id: 'views_block:taxonomy_term-block_2'
-              label: ''
-              provider: views
-              label_display: '0'
-              views_label: ''
-              items_per_page: none
-              context_mapping:
-                tid: layout_builder.entity
-            additional: {  }
-            weight: 3
-          24db86d1-1cfe-4ecc-a65a-b99dc00945f7:
-            uuid: 24db86d1-1cfe-4ecc-a65a-b99dc00945f7
+          1c75acae-6bc5-4b2a-be93-3d2a64e81c07:
+            uuid: 1c75acae-6bc5-4b2a-be93-3d2a64e81c07
             region: content
             configuration:
               id: 'views_block:taxonomy_term-block_1'
@@ -49,25 +39,26 @@ third_party_settings:
               context_mapping:
                 tid: layout_builder.entity
             additional: {  }
-            weight: 5
-          a764f892-faa9-46bf-9681-fe0a7f0150d9:
-            uuid: a764f892-faa9-46bf-9681-fe0a7f0150d9
+            weight: 4
+          e1579a8e-9177-4429-bdd7-5f73bc3241c3:
+            uuid: e1579a8e-9177-4429-bdd7-5f73bc3241c3
             region: content
             configuration:
-              id: 'views_block:codec_county_blocks-block_4'
+              id: 'views_block:taxonomy_term-block_2'
               label: ''
               provider: views
-              label_display: visible
+              label_display: '0'
               views_label: ''
               items_per_page: none
-              context_mapping: {  }
+              context_mapping:
+                tid: layout_builder.entity
             additional: {  }
-            weight: 4
-          6384412b-ea71-4c21-915c-c78fe4517223:
-            uuid: 6384412b-ea71-4c21-915c-c78fe4517223
+            weight: 1
+          2271e6b3-6921-40ec-9305-624c3cef7d26:
+            uuid: 2271e6b3-6921-40ec-9305-624c3cef7d26
             region: content
             configuration:
-              id: 'views_block:codec_county_population_display-block_2'
+              id: 'views_block:codec_county_blocks-block_8'
               label: ''
               provider: views
               label_display: '0'
@@ -75,11 +66,24 @@ third_party_settings:
               items_per_page: '40'
               context_mapping: {  }
             additional: {  }
-            weight: 1
+            weight: 2
+          353e5ebd-3fc7-462f-8c8b-4f71f4043097:
+            uuid: 353e5ebd-3fc7-462f-8c8b-4f71f4043097
+            region: content
+            configuration:
+              id: 'views_block:codec_county_blocks-block_5'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: '40'
+              context_mapping: {  }
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
-id: taxonomy_term.codec_ga_cities.default
+id: taxonomy_term.codec_solar_companies.default
 targetEntityType: taxonomy_term
-bundle: codec_ga_cities
+bundle: codec_solar_companies
 mode: default
 content:
   description:
@@ -89,13 +93,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_codec_ga_county:
-    weight: 1
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-hidden:
-  feeds_item: true
+hidden: {  }

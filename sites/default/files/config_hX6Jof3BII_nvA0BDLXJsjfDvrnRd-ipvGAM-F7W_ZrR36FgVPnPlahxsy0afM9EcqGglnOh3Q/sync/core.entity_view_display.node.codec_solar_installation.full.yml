@@ -24,13 +24,306 @@ dependencies:
     - address
     - datetime
     - layout_builder
+    - layout_discovery
     - leaflet
     - text
     - user
 third_party_settings:
   layout_builder:
     allow_custom: false
-    enabled: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 50-50
+        components:
+          ec390046-7c33-4f21-a65c-8dee30310f85:
+            uuid: ec390046-7c33-4f21-a65c-8dee30310f85
+            region: first
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_location'
+              label: Location
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: leaflet_formatter_default
+                settings:
+                  multiple_map: 0
+                  popup: 0
+                  popup_content: ''
+                  leaflet_map: 'OSM Mapnik'
+                  height: '400'
+                  hide_empty_map: 0
+                  disable_wheel: 0
+                  fullscreen_control: 1
+                  reset_map:
+                    control: 0
+                    position: topright
+                  map_position:
+                    force: 0
+                    zoom: '12'
+                    minZoom: '1'
+                    maxZoom: '18'
+                  icon:
+                    iconUrl: ''
+                    shadowUrl: ''
+                    iconSize:
+                      x: ''
+                      'y': ''
+                    iconAnchor:
+                      x: ''
+                      'y': ''
+                    shadowSize:
+                      x: ''
+                      'y': ''
+                    shadowAnchor:
+                      x: ''
+                      'y': ''
+                    popupAnchor:
+                      x: ''
+                      'y': ''
+                  leaflet_markercluster:
+                    control: 0
+                    options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+                  path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          025561bf-625c-4797-9ec6-4d1724824626:
+            uuid: 025561bf-625c-4797-9ec6-4d1724824626
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:codec_solar_installation:field_codec_install_date'
+              formatter:
+                label: inline
+                settings:
+                  timezone_override: ''
+                  date_format: Y-m-d
+                third_party_settings: {  }
+                type: datetime_custom
+            additional: {  }
+            weight: 0
+          01c36fd9-8260-4c43-8675-b383262800b3:
+            uuid: 01c36fd9-8260-4c43-8675-b383262800b3
+            region: second
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_system_type'
+              label: 'System Type'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+          464db867-5c1d-4f19-9ec6-e7815408e7d5:
+            uuid: 464db867-5c1d-4f19-9ec6-e7815408e7d5
+            region: second
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_sector'
+              label: Sector
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 4
+          88dba9a7-f608-4937-b073-92bcde08f7a7:
+            uuid: 88dba9a7-f608-4937-b073-92bcde08f7a7
+            region: second
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_electric_utility'
+              label: 'Electric Utility'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 5
+          b037ba56-7672-47d9-9cee-1fafaea2c24a:
+            uuid: b037ba56-7672-47d9-9cee-1fafaea2c24a
+            region: second
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_installer'
+              label: 'Installation Company'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 6
+          fba85d9a-baa1-4030-81f5-923e43efb8ef:
+            uuid: fba85d9a-baa1-4030-81f5-923e43efb8ef
+            region: second
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_manufacturer'
+              label: 'System Manufacturer'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 7
+          cbb8c5af-3406-4185-b1bc-420b9e805338:
+            uuid: cbb8c5af-3406-4185-b1bc-420b9e805338
+            region: second
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_annual_prod'
+              label: 'Annual Production'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: number_decimal
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                  decimal_separator: .
+                  scale: 2
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          e85d2f2b-aa15-43e1-9dbd-fb2e662bfa4e:
+            uuid: e85d2f2b-aa15-43e1-9dbd-fb2e662bfa4e
+            region: first
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_county_test'
+              label: County
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 3
+          426bf462-a221-42b2-908a-53cd7f5862eb:
+            uuid: 426bf462-a221-42b2-908a-53cd7f5862eb
+            region: first
+            configuration:
+              id: 'field_block:node:codec_solar_installation:field_codec_city_muni'
+              label: City
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          bb0e8a70-f6b9-4f4a-a094-0ce8ec6d2a23:
+            uuid: bb0e8a70-f6b9-4f4a-a094-0ce8ec6d2a23
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:codec_solar_installation:field_codec_zipcode'
+              formatter:
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_integer
+            additional: {  }
+            weight: 1
+          bd438a50-8646-4f8f-822e-e6078b87d64e:
+            uuid: bd438a50-8646-4f8f-822e-e6078b87d64e
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:codec_solar_installation:field_codec_system_capacity'
+              formatter:
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+                type: number_decimal
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          898385a4-700a-4657-8f40-53cb82383411:
+            uuid: 898385a4-700a-4657-8f40-53cb82383411
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:codec_solar_installation:links'
+            additional: {  }
+            weight: 0
+          637adede-c745-4dad-bfbe-f82a152b3ed3:
+            uuid: 637adede-c745-4dad-bfbe-f82a152b3ed3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:codec_solar_installation:field_address'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: address_default
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
 id: node.codec_solar_installation.full
 targetEntityType: node
 bundle: codec_solar_installation

@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.tools
   module:
+    - ctools
     - system
     - user
   theme:
@@ -13,7 +14,7 @@ _core:
   default_config_hash: peSjad-Z4lQbpVkOIwmkryIpldfeeNg-rm7_S-HqhFE
 id: enterpriseplus_tools
 theme: enterpriseplus
-region: sidebar_first
+region: hidden_blocks_collection
 weight: -10
 provider: null
 plugin: 'system_menu_block:tools'
@@ -33,3 +34,15 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      codec_solar_installation: codec_solar_installation
+      codec_vf_informant: codec_vf_informant
+      forum: forum
+      mt_service: mt_service
+      mt_showcase: mt_showcase
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

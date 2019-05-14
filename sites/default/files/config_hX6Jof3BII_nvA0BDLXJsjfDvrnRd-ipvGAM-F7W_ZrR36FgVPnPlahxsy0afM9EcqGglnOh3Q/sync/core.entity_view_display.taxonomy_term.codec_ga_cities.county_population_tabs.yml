@@ -1,0 +1,63 @@
+uuid: 304be880-431b-4ace-9551-2102ca1c070b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.county_population_tabs
+    - field.field.taxonomy_term.codec_ga_cities.field_codec_ga_county
+    - taxonomy.vocabulary.codec_ga_cities
+  module:
+    - field_group
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  field_group:
+    group_census_data:
+      children:
+        - group_communit
+      parent_name: ''
+      weight: 20
+      format_type: tabs
+      format_settings:
+        label: 'Census Data'
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: 'Census Data'
+    group_communit:
+      children:
+        - field_codec_ga_county
+      parent_name: group_census_data
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+      label: Community
+id: taxonomy_term.codec_ga_cities.county_population_tabs
+targetEntityType: taxonomy_term
+bundle: codec_ga_cities
+mode: county_population_tabs
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_codec_ga_county:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  feeds_item: true

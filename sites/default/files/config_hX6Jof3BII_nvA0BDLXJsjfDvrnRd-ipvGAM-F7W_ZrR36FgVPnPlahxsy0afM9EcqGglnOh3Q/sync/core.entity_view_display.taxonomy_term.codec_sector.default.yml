@@ -1,0 +1,63 @@
+uuid: db92f1ea-b422-49f3-a39b-2967f0223a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.codec_sector
+    - views.view.taxonomy_term
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          aca0cde3-3bfd-400c-bdd4-5e0c4a1576e8:
+            uuid: aca0cde3-3bfd-400c-bdd4-5e0c4a1576e8
+            region: content
+            configuration:
+              id: 'views_block:taxonomy_term-block_2'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping:
+                tid: layout_builder.entity
+            additional: {  }
+            weight: 0
+          597ab06d-0f80-4aa6-b825-2ab965b5f0e4:
+            uuid: 597ab06d-0f80-4aa6-b825-2ab965b5f0e4
+            region: content
+            configuration:
+              id: 'views_block:taxonomy_term-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping:
+                tid: layout_builder.entity
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: taxonomy_term.codec_sector.default
+targetEntityType: taxonomy_term
+bundle: codec_sector
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

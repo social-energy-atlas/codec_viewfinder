@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
     - core.entity_view_mode.taxonomy_term.full
     - field.field.taxonomy_term.codec_georgia_counties.feeds_item
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_avg_pct_suit_roof
@@ -29,15 +30,165 @@ dependencies:
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhri
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_zmhvi
     - taxonomy.vocabulary.codec_georgia_counties
+    - views.view.codec_county_blocks
+    - views.view.codec_county_population_display
+    - views.view.taxonomy_term
   module:
     - layout_builder
+    - layout_discovery
     - leaflet
     - link
     - text
+    - views
 third_party_settings:
   layout_builder:
     allow_custom: false
-    enabled: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          f4021446-a3d7-4832-8805-2528b7c29fe9:
+            uuid: f4021446-a3d7-4832-8805-2528b7c29fe9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:codec_georgia_counties:field_codec_sampling_plan'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 26
+          1370a79f-5e7d-49c6-9e6e-f72d587f5a3c:
+            uuid: 1370a79f-5e7d-49c6-9e6e-f72d587f5a3c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:taxonomy_term:codec_georgia_counties:field_codec_poly_map'
+              formatter:
+                label: hidden
+                settings:
+                  multiple_map: 0
+                  leaflet_map: 'OSM Mapnik'
+                  height: 400
+                  hide_empty_map: 0
+                  disable_wheel: 0
+                  fullscreen_control: 1
+                  reset_map:
+                    control: 0
+                    position: topright
+                  popup: false
+                  popup_content: ''
+                  map_position:
+                    force: 0
+                    center:
+                      lat: 0
+                      lon: 0
+                    zoom: 12
+                    minZoom: 1
+                    maxZoom: 18
+                  icon:
+                    iconUrl: ''
+                    iconSize:
+                      x: null
+                      'y': null
+                    iconAnchor:
+                      x: null
+                      'y': null
+                    shadowUrl: ''
+                    shadowSize:
+                      x: null
+                      'y': null
+                    shadowAnchor:
+                      x: null
+                      'y': null
+                    popupAnchor:
+                      x: null
+                      'y': null
+                  leaflet_markercluster:
+                    control: 0
+                    options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+                  path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+                third_party_settings: {  }
+                type: leaflet_formatter_default
+            additional: {  }
+            weight: 4
+          532e8f33-d082-420f-bca4-c035429b82ed:
+            uuid: 532e8f33-d082-420f-bca4-c035429b82ed
+            region: content
+            configuration:
+              id: 'views_block:codec_county_population_display-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: '40'
+              context_mapping: {  }
+            additional: {  }
+            weight: 5
+          7ae8a81a-236e-4dc5-9bd2-6260c621942e:
+            uuid: 7ae8a81a-236e-4dc5-9bd2-6260c621942e
+            region: content
+            configuration:
+              id: 'inline_block:basic'
+              label: 'CODEC SolarView Information'
+              provider: layout_builder
+              label_display: visible
+              view_mode: full
+              block_revision_id: 14
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 25
+          a9c6f598-7696-41e4-af82-0ed3189243a6:
+            uuid: a9c6f598-7696-41e4-af82-0ed3189243a6
+            region: content
+            configuration:
+              id: 'views_block:taxonomy_term-block_2'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping:
+                tid: layout_builder.entity
+            additional: {  }
+            weight: 22
+          51d8f936-7558-4bb6-86a8-f1489ea00260:
+            uuid: 51d8f936-7558-4bb6-86a8-f1489ea00260
+            region: content
+            configuration:
+              id: 'views_block:taxonomy_term-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping:
+                tid: layout_builder.entity
+            additional: {  }
+            weight: 24
+          6eb46119-6c69-4481-b9d7-882404cb213c:
+            uuid: 6eb46119-6c69-4481-b9d7-882404cb213c
+            region: content
+            configuration:
+              id: 'views_block:codec_county_blocks-block_2'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: '40'
+              context_mapping: {  }
+            additional: {  }
+            weight: 23
+        third_party_settings: {  }
 id: taxonomy_term.codec_georgia_counties.full
 targetEntityType: taxonomy_term
 bundle: codec_georgia_counties
