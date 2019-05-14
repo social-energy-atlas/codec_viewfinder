@@ -8,9 +8,13 @@ dependencies:
     - field.storage.taxonomy_term.field_codec_pop_median_income
     - field.storage.taxonomy_term.field_codec_pop_total
     - taxonomy.vocabulary.codec_georgia_counties
+    - taxonomy.vocabulary.codec_pv_system_types
+  content:
+    - 'taxonomy_term:codec_pv_system_types:1031b3e6-b1c8-4a41-a1ad-92a18cf0fab1'
+    - 'taxonomy_term:codec_pv_system_types:bbd8a64b-c943-49c7-a0ba-52622e3ba777'
   module:
     - better_exposed_filters
-    - geofield
+    - leaflet
     - leaflet_views
     - node
     - taxonomy
@@ -746,6 +750,51 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: numeric
+        field_codec_system_type_target_id:
+          id: field_codec_system_type_target_id
+          table: node__field_codec_system_type
+          field: field_codec_system_type_target_id
+          relationship: reverse__node__field_codec_county_test
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            461: 461
+            1153: 1153
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: codec_pv_system_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts: {  }
       title: 'CODEC County Solar Map'
       header: {  }
@@ -796,15 +845,15 @@ display:
           grouping: {  }
           data_source: field_codec_poly_map
           name_field: name
-          description_field: nid
-          view_mode: county_population_tabs
+          description_field: '#rendered_entity'
+          view_mode: map_pin
           leaflet_map: 'OSM Mapnik'
-          height: '600'
+          height: '400'
           hide_empty_map: 0
           disable_wheel: 0
           fullscreen_control: 1
           reset_map:
-            control: 1
+            control: 0
             position: topright
           map_position:
             force: 0
@@ -835,7 +884,7 @@ display:
           leaflet_markercluster:
             control: 0
             options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
-          path: '{"color":"#004E60","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+          path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
       defaults:
         style: false
         row: false
@@ -941,10 +990,46 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: geofield_default
+          type: leaflet_formatter_default
           settings:
-            output_format: wkt
-            output_escape: 1
+            multiple_map: 0
+            popup: 0
+            popup_content: ''
+            leaflet_map: 'OSM Mapnik'
+            height: '400'
+            hide_empty_map: 0
+            disable_wheel: 0
+            fullscreen_control: 0
+            reset_map:
+              control: 0
+              position: topright
+            map_position:
+              force: 0
+              zoom: '12'
+              minZoom: '1'
+              maxZoom: '18'
+            icon:
+              iconUrl: ''
+              shadowUrl: ''
+              iconSize:
+                x: ''
+                'y': ''
+              iconAnchor:
+                x: ''
+                'y': ''
+              shadowSize:
+                x: ''
+                'y': ''
+              shadowAnchor:
+                x: ''
+                'y': ''
+              popupAnchor:
+                x: ''
+                'y': ''
+            leaflet_markercluster:
+              control: 0
+              options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+            path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1084,18 +1169,18 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        nid:
-          id: nid
-          table: node_field_data
-          field: nid
-          relationship: reverse__node__field_codec_county_test
-          group_type: count_distinct
+        name_1:
+          id: name_1
+          table: taxonomy_term_field_data
+          field: name
+          relationship: none
+          group_type: count
           admin_label: ''
-          label: 'Total Installations'
+          label: Installations
           exclude: false
           alter:
-            alter_text: true
-            text: "<h5>{{ name }}</h5>\r\nSolar Installations: {{ nid }}<br/>\r\nTotal Population: {{ field_codec_pop_total }}<br/>\r\nMedian Income: {{ field_codec_pop_median_income }}<br/>"
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -1141,10 +1226,10 @@ display:
           prefix: ''
           suffix: ''
           click_sort_column: value
-          type: number_integer
+          type: string
           settings: {  }
-          group_column: null
-          group_columns: null
+          group_column: value
+          group_columns: {  }
           group_rows: true
           delta_limit: 0
           delta_offset: 0
@@ -1152,9 +1237,10 @@ display:
           delta_first_last: false
           multi_type: separator
           field_api_classes: false
-          entity_type: node
-          entity_field: nid
-          plugin_id: field
+          convert_spaces: false
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
       displays:
         page_1: page_1
       inherit_exposed_filters: true
@@ -1204,20 +1290,7 @@ display:
       display_extenders: {  }
       path: maps/solar/county
       exposed_block: true
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: 'Your search returned [view:total-rows] installations..'
-            format: basic_html
-          plugin_id: text
+      header: {  }
       defaults:
         header: false
     cache_metadata:

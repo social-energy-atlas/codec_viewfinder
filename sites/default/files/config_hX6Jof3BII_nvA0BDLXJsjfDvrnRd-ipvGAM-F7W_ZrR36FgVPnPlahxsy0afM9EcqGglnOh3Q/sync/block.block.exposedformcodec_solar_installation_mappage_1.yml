@@ -1,0 +1,29 @@
+uuid: 7fff6adf-a785-4ec7-8bb1-07f2c9c5777a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.codec_solar_installation_map
+  module:
+    - system
+    - views
+  theme:
+    - enterpriseplus
+id: exposedformcodec_solar_installation_mappage_1
+theme: enterpriseplus
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:codec_solar_installation_map-page_1'
+settings:
+  id: 'views_exposed_filter_block:codec_solar_installation_map-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /maps/solar
+    negate: false
+    context_mapping: {  }

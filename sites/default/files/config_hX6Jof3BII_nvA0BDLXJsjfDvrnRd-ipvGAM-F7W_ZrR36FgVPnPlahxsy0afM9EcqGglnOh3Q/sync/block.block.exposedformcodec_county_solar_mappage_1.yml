@@ -1,0 +1,29 @@
+uuid: 1ca44793-05b0-488c-b55d-490b0bf23b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.codec_county_solar_map
+  module:
+    - system
+    - views
+  theme:
+    - enterpriseplus
+id: exposedformcodec_county_solar_mappage_1
+theme: enterpriseplus
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:codec_county_solar_map-page_1'
+settings:
+  id: 'views_exposed_filter_block:codec_county_solar_map-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /maps/solar/county
+    negate: false
+    context_mapping: {  }

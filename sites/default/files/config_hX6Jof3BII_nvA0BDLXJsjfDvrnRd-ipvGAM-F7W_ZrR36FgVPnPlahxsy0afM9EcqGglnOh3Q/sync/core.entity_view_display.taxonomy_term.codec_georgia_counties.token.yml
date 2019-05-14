@@ -1,8 +1,9 @@
-uuid: 84a11618-f0e8-445e-97a5-93301d1e2699
+uuid: 6b2b2067-64b5-445b-9f15-0088e24bfea1
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.token
     - field.field.taxonomy_term.codec_georgia_counties.feeds_item
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_avg_pct_suit_roof
     - field.field.taxonomy_term.codec_georgia_counties.field_codec_county_seat
@@ -35,10 +36,10 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: taxonomy_term.codec_georgia_counties.default
+id: taxonomy_term.codec_georgia_counties.token
 targetEntityType: taxonomy_term
 bundle: codec_georgia_counties
-mode: default
+mode: token
 content:
   field_codec_poly_map:
     type: leaflet_formatter_default
@@ -89,7 +90,7 @@ content:
     weight: 2
     label: inline
     settings:
-      thousand_separator: ''
+      thousand_separator: ','
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
@@ -98,7 +99,7 @@ content:
     weight: 1
     label: inline
     settings:
-      thousand_separator: ''
+      thousand_separator: ','
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer

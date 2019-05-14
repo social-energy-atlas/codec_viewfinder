@@ -21,13 +21,16 @@ dependencies:
     - taxonomy.vocabulary.codec_solar_companies
     - taxonomy.vocabulary.codec_utilities
   content:
-    - 'taxonomy_term:codec_pv_system_types:051f1c30-0cc9-4e55-a503-75008eac57f6'
-    - 'taxonomy_term:codec_pv_system_types:5d0b57ba-83c8-4ae3-ae26-7b54f707f21c'
-    - 'taxonomy_term:codec_sector:1efee8c8-d619-44ee-8da2-8ddc6b8d1704'
+    - 'taxonomy_term:codec_ga_cities:040b58ed-704a-44a5-aef4-a6f49c62a463'
+    - 'taxonomy_term:codec_georgia_counties:e2a156d1-97ac-4fd2-a12c-cab466519547'
+    - 'taxonomy_term:codec_pv_system_types:1031b3e6-b1c8-4a41-a1ad-92a18cf0fab1'
+    - 'taxonomy_term:codec_pv_system_types:bbd8a64b-c943-49c7-a0ba-52622e3ba777'
+    - 'taxonomy_term:codec_utilities:581c8979-9f73-4798-bb3b-3b7e79ddac0e'
   module:
     - better_exposed_filters
     - datetime
     - geofield
+    - leaflet
     - leaflet_views
     - node
     - taxonomy
@@ -833,8 +836,8 @@ display:
           admin_label: ''
           operator: or
           value:
-            232: 232
-            1019: 1019
+            461: 461
+            1153: 1153
           group: 1
           exposed: false
           expose:
@@ -1804,10 +1807,46 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: geofield_default
+          type: leaflet_formatter_default
           settings:
-            output_format: wkt
-            output_escape: 1
+            multiple_map: 0
+            popup: 0
+            popup_content: ''
+            leaflet_map: 'OSM Mapnik'
+            height: '400'
+            hide_empty_map: 0
+            disable_wheel: 0
+            fullscreen_control: 0
+            reset_map:
+              control: 0
+              position: topright
+            map_position:
+              force: 0
+              zoom: '12'
+              minZoom: '1'
+              maxZoom: '18'
+            icon:
+              iconUrl: ''
+              shadowUrl: ''
+              iconSize:
+                x: ''
+                'y': ''
+              iconAnchor:
+                x: ''
+                'y': ''
+              shadowSize:
+                x: ''
+                'y': ''
+              shadowAnchor:
+                x: ''
+                'y': ''
+              popupAnchor:
+                x: ''
+                'y': ''
+            leaflet_markercluster:
+              control: 0
+              options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
+            path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -2089,12 +2128,12 @@ display:
           description_field: field_codec_manufacturer
           view_mode: full
           leaflet_map: 'OSM Mapnik'
-          height: '500'
+          height: '600'
           hide_empty_map: 0
           disable_wheel: 0
           fullscreen_control: 1
           reset_map:
-            control: 1
+            control: 0
             position: topright
           map_position:
             force: 0
@@ -2123,7 +2162,7 @@ display:
               x: ''
               'y': ''
           leaflet_markercluster:
-            control: 1
+            control: 0
             options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
           path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
       row:
@@ -2135,7 +2174,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 20
+          items_per_page: 200
           offset: 0
           id: 0
           total_pages: null
@@ -2145,9 +2184,9 @@ display:
             first: '« First'
             last: 'Last »'
           expose:
-            items_per_page: false
+            items_per_page: true
             items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options: '5, 10, 25, 50, 100, 200'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- All -'
             offset: false
@@ -3194,6 +3233,7 @@ display:
           3: AND
       block_description: 'Residential Search'
       arguments: {  }
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -4331,6 +4371,7 @@ display:
       row:
         type: fields
         options: {  }
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -4873,11 +4914,13 @@ display:
         fields: false
         header: true
         pager: false
+        style: false
+        row: false
       exposed_block: true
       pager:
         type: full
         options:
-          items_per_page: 20
+          items_per_page: 100
           offset: 0
           id: 0
           total_pages: null
@@ -4895,6 +4938,88 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            title: title
+            field_codec_install_date: field_codec_install_date
+            field_codec_city_muni: field_codec_city_muni
+            field_codec_county_test: field_codec_county_test
+            field_codec_sector: field_codec_sector
+            field_codec_system_capacity: field_codec_system_capacity
+            field_codec_installer: field_codec_installer
+            field_codec_electric_utility: field_codec_electric_utility
+          info:
+            title:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_codec_install_date:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_codec_city_muni:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_codec_county_test:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_codec_sector:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_codec_system_capacity:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_codec_installer:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_codec_electric_utility:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
+      row:
+        type: fields
+        options: {  }
     cache_metadata:
       max-age: -1
       contexts:
